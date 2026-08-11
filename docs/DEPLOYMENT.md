@@ -1,53 +1,55 @@
-## Deployment
+# Deployment
 
-### 1. Vite configuration
-Open `vite.config.js` and set the base directory for your application. This setting defines the main path that your website will be hosted under.
+## GitHub Pages
 
-```js
-export default defineConfig({
-  base: '/vue-resume-template/',
-  plugins: [vue()],
-})
-```
+This repository is configured for the root user site `https://jehosua97.github.io/`, so Vite's base path remains `/`.
 
-In simple terms, if you consider GitHub hosting the GitHub Pages site for this repo at the URL `https://ryanbalieiro.github.io/vue-resume-template/`, the correct base directory to set is `/vue-resume-template/`.
+The workflow at `.github/workflows/deploy.yml` runs when `main` is updated or when triggered manually. It uses Node.js 22, installs dependencies with `npm ci`, builds the portfolio, and publishes `dist/` to the `gh-pages` branch.
 
-If you're deploying to Netlify or your own custom domain where your website is located at the root, you can leave the `base` setting as `'/'`.
+### Repository settings
 
-### 2. Building for production
-To compile your project for production, execute:
+1. Open **Settings → Actions → General**.
+2. Allow GitHub Actions and give workflow permissions read/write access.
+3. Open **Settings → Pages**.
+4. Select **Deploy from a branch** and use the `gh-pages` branch at `/ (root)`.
+5. If live form delivery is configured, add its endpoint as the repository secret `VITE_CONTACT_FORM_ENDPOINT` under **Settings → Secrets and variables → Actions**.
+6. Push to `main` or manually run the deployment workflow.
 
-```
+### Route handling
+
+`npm run build` creates an `index.html` inside every public route directory plus a `404.html` fallback. Direct visits to project URLs therefore work on GitHub Pages without hash-based URLs.
+
+## Pre-deployment verification
+
+Run:
+
+```bash
+npm ci
 npm run build
-``` 
+npm run preview
+```
 
-This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder.
+Then verify:
 
-### 3. Deploying to GitHub pages
+- `/`
+- `/projects/`
+- All three project detail routes
+- `/pdf/Jehosua-A-Joya-Resume.pdf`
+- Portrait and project images
+- Email, phone, LinkedIn, GitHub, Credly, and repository links
+- Contact delivery with the production endpoint
+- Mobile navigation and keyboard focus
 
-This project comes with a preconfigured GitHub Actions workflow that automatically builds and deploys the portfolio to GitHub Pages. If needed, you can find and customize this workflow in the `.github/workflows` folder.
+## Custom domain
 
-Follow these steps to deploy your portfolio to GitHub Pages:
+If a custom domain is connected later:
 
-- **Make sure the base directory in `vite.config.js` matches your repo name.**
-- **Make sure your repository is public.**
-- **Enable GitHub Actions** in your repository settings:
-    - Go to `Your Repo > Settings > Actions > General`.
-    - Under **Actions permissions**, select **"Allow all actions and reusable workflows"**.
-    - Scroll down to **Workflow permissions** and enable **"Read and write permissions"**.  
-      ⚠️ *If this step is skipped, the deployment script will fail after the build stage.*
-- Once everything is configured, **push a commit** to your repository to trigger the deployment script automatically.
-- If the deployment doesn't start automatically:
-    - Go to the **Actions** tab in your GitHub repo.
-    - If a confirmation message appears, click **"I understand my workflows, go ahead and enable them"**.
-    - Select the **"Deploy portfolio to GitHub Pages"** workflow on the left sidebar.
-    - Run it manually by clicking **"Run workflow"**.
-    - If it already ran and failed, you can click the **"Re-run jobs"** button to run it again.
-- After a successful run, the script will:
-    - Build the project
-    - Create a new branch called `gh-pages` in your repository with your production-ready files.
-- Now go to `Your Repo > Settings > Pages`, and:
-    - Set the **source branch** to `gh-pages`
-    - Save the changes
-- Wait a few seconds for GitHub to process the deployment.  
-  You should then see the deployment status and a link to your live portfolio in the **"Deployments"** section on the right side of your repository homepage.
+1. Add the domain in GitHub Pages settings.
+2. Add a `public/CNAME` file containing the domain.
+3. Update all canonical URLs listed in `docs/CONFIGURATION.md`.
+4. Confirm HTTPS enforcement.
+5. Re-test direct project routes and Open Graph previews.
+
+## Other static hosts
+
+The contents of `dist/` can also be deployed to Netlify, Cloudflare Pages, Vercel, or any static host. Configure the build command as `npm run build` and the output directory as `dist`.

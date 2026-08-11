@@ -1,109 +1,88 @@
-<p align="center">
-    <img src="docs/assets/logo.svg" width="120">
-</p>
+# Jehosua A. Joya, MCS, MBA, B.Eng. — Engineering Portfolio
 
-# [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
+Professional portfolio for **Jehosua A. Joya, MCS, MBA, B.Eng.**, a Cloud, Software & Automation Engineer based in Brampton, Ontario, Canada.
 
-A clean and minimal template for building a resume landing page, powered by **Vue 3** (Composition API) and **Bootstrap 5**.
+The site is designed for two audiences:
 
-![alt tag1](docs/assets/promo-1.png)
+- Engineering recruiters and employers evaluating cloud, platform, software, DevOps, and automation experience.
+- Businesses looking for process automation, API integration, cloud delivery, monitoring, or responsible AI-ready workflow design.
 
-Key features:
-- Uses Vue3 **Composition API**.
-- **Six unique section layouts** to showcase your work experience, education, skills, projects, and more.
-- Adaptive navigation: **a fixed sidebar** for desktops and **a tabbed layout** for mobile.
-- Built-in **multi-language** support.
-- Emails with **EmailJS** – no backend needed!
-- **Super easy** to customize!
+## What is included
 
-## Live Preview
+- Executive, responsive homepage with professional portrait and verified career metrics.
+- Separate projects index and three project case-study routes.
+- Real notebook artifacts from the public churn-analysis repository.
+- Real workflow names and architectural boundaries from the automation repository.
+- Services, delivery process, professional experience, education, credentials, toolkit, about, and contact sections.
+- Public telephone, email, LinkedIn, GitHub, résumé download, and availability for freelance, consulting, and full-time opportunities.
+- Individual public Credly links for both Google Cloud Skill Badges.
+- Contact validation, explicit consent, a honeypot, service-endpoint support, and an honest email fallback.
+- SEO metadata, Open Graph tags, canonical URLs, sitemap, robots file, Person structured data, and project structured data.
+- Accessible semantics, keyboard focus states, WCAG-oriented contrast, and reduced-motion support.
+- Static route entry files generated for GitHub Pages.
 
-Here's a list of live versions of the template:
+## Routes
 
-| #     | Version                | Description                                              | URL                                                                  |
-|-------|------------------------|----------------------------------------------------------|----------------------------------------------------------------------|
-| 🟣    | Roy Sheppard (default) | Latest deployment of the template here on GitHub pages.  | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)       | 
-| 🟢    | Alana Richard          | An example of how the template can be customized.        | [Preview](https://ryansandbox.github.io/alana-richard-vue-resume/)   |  
-| 🔵    | Gabriel Becker         | Another example of how the template can be customized.   | [Preview](https://ryansandbox.github.io/gabriel-becker-vue-resume/)  |
+| Route | Purpose |
+| --- | --- |
+| `/` | Complete portfolio homepage |
+| `/projects/` | Selected-work index |
+| `/projects/sustainable-telecom-churn/` | Applied ML case study |
+| `/projects/business-ai-automation-hub/` | Business automation case study |
+| `/projects/hybrid-cloud-monitoring-platform/` | Cloud monitoring capstone case study |
 
-## Layout and concept
+## Stack
 
-### 1. Base layout
-The theme has a clean, minimalist design with a nice mix of purple shades that gives it a fresh, stylish vibe.
+- Vue 3
+- Vue Router
+- Vite
+- SCSS
+- Static GitHub Pages deployment
 
-![alt tag1](docs/assets/promo-4.png)
+No component framework, icon library, tracking script, or runtime content API is required. Content is imported locally for a fast and predictable initial load.
 
-### 2. Desktop Screenshots
-On desktop, it has a simple one-page layout with a fixed sidebar, so users can easily scroll through the sections.
+## Local development
 
-![alt tag1](docs/assets/promo-2.png)
+Requirements: Node.js 22+ and npm.
 
-### 3. Mobile Screenshots
-On mobile, the layout groups the sections into categories and transforms into a tabbed interface with a bottom navigation.
-
-![alt tag1](docs/assets/promo-3.png)
-
-## Getting Started
-
-1. Clone the repo:
-```
-git clone https://github.com/ryanbalieiro/vue-resume-template
-```
-
-2. Go to the project's root folder and use npm to install all required components:
-```
+```bash
 npm install
-```
-
-3. Launch the project in developer mode:
-```
 npm run dev
 ```
 
-4. (Optional) If you'd like to clear all the portfolio data and begin with a blank page with no sections, run the command below:
+Open the URL printed by Vite, normally `http://localhost:5173`.
+
+## Production build
+
+```bash
+npm run build
+npm run preview
 ```
-npm run resume:clear
+
+The build command creates the optimized app and route-specific HTML entry files in `dist/`.
+
+## Contact form
+
+The repository intentionally does not invent or reuse a third-party form account. Copy `.env.example` to `.env.local` and set the endpoint supplied by the chosen provider:
+
+```env
+VITE_CONTACT_FORM_ENDPOINT=https://your-secure-form-endpoint.example
 ```
 
-5. (Optional) If you want to temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and set the `preloaderEnabled` flag to false.
+When no endpoint is configured, the form opens the visitor's email client with a prepared message and clearly says that no submission was stored or delivered by the site.
 
-## Configuration Tutorial
+See [docs/CONFIGURATION.md](docs/CONFIGURATION.md) for content and form configuration, [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md) for information architecture and wireframes, and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for publishing instructions.
 
-Watch this step-by-step video tutorial to see exactly how to configure your resume:
+## Source of truth
 
-| #   | Title                                    | Watch                                                                    |
-|-----|------------------------------------------|--------------------------------------------------------------------------|
-| 1   | Setting up the project                   | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=0m00s)  |
-| 2   | Title and colors                         | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=1m31s)  |
-| 3   | Settings, strings and profile            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=4m20s)  |
-| 4   | Categories and sections                  | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=7m37s)  |
-| 5   | ArticleProfile                           | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=10m33s) |
-| 6   | ArticleTimeline                          | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=14m12s) |
-| 7   | ArticleSkills                            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=18m00s) |
-| 8   | ArticlePortfolio                         | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=22m38s) |
-| 9   | ArticleThreads and ArticleContactOptions | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=25m36s) |
-| 10  | ArticleContactForm                       | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=29m44s) |
-| 11  | Deploying on GitHub Pages                | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=34m05s) |
-| 12  | Extra deployment instructions            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=36m20s) |   
+- Portfolio content: `src/data/portfolio.js`
+- Views: `src/views/`
+- Reusable components: `src/components/`
+- Visual system: `src/scss/style.scss`
+- Portrait and project artifacts: `public/images/`
+- Downloadable résumé: `public/pdf/Jehosua-A-Joya-Resume.pdf`
+- Editable résumé source: `docs/resume-source.html`
 
-For step-by-step setup and deployment instructions, you can also check out the following docs:
-- [CONFIGURATION.md](./docs/CONFIGURATION.md) – learn how to configure and customize the project.
-- [DEPLOYMENT.md](./docs/DEPLOYMENT.md) – short guide on deploying the project.
+## Content integrity
 
-## About
-
-This template was created by and is maintained by **[Ryan Balieiro](https://ryanbalieiro.com/)**.
-
-It is based on the [Bootstrap](https://getbootstrap.com/) framework created by Mark Otto and Jacob Thorton; and the [Vue](https://vuejs.org/) framework created by Evan You.
-
-Additional frameworks and plugins used include:
-- **Font Awesome**: A library of free vector icons.
-- **EmailJS**: A free service that allows you to send emails using JavaScript.
-- **PrimeIcons**: Another library of free vector icons.
-- **ChartJS**: A free JavaScript library for creating charts and graphs.
-
-## Copyright and License
-
-Code released under the [MIT](https://opensource.org/license/mit) license, providing complete freedom for utilization. Feel free to enhance and adapt it to suit your needs.
-
-Oh... and if you like this template, don't forget to **give it a ⭐** :)
+The site intentionally avoids testimonials, client logos, unverified commercial outcomes, completed AWS/Terraform certification claims, production LLM claims, and fake product screenshots. Career metrics are labeled as documented past results, not future guarantees.
