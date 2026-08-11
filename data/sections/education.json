@@ -1,0 +1,237 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": {"year": 2016, "month": 0},
+                    "dateEnd": {"year": 2021, "month": 0},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-graduation-cap",
+                    "fallbackFaIconColor": "#17b8a6",
+                    "locales": {
+                        "en": {
+                            "title": "Bachelor of Computer Engineering",
+                            "description": "A foundation in computer engineering, covering algorithms, systems, and software fundamentals.",
+                            "list": null,
+                            "province": "Mexico City",
+                            "country": "Mexico",
+                            "institution": "National Autonomous University of Mexico (UNAM)",
+                            "tags": ["WES Evaluated"]
+                        },
+                        "es": {
+                            "title": "Ingeniería en Computación",
+                            "description": "Una base en ingeniería en computación: algoritmos, sistemas y fundamentos de software.",
+                            "list": null,
+                            "province": "Ciudad de México",
+                            "country": "México",
+                            "institution": "Universidad Nacional Autónoma de México (UNAM)",
+                            "tags": ["Evaluado por WES"]
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 2,
+                    "dateStart": {"year": 2023, "month": 0},
+                    "dateEnd": {"year": 2024, "month": 6},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-graduation-cap",
+                    "fallbackFaIconColor": "#2854e0",
+                    "locales": {
+                        "en": {
+                            "title": "Master of Business Administration (MBA)",
+                            "description": "The MBA grounds my engineering work in business strategy — it's the reason I can connect technical execution to real operational and business outcomes.",
+                            "list": {
+                                "title": "What it sharpened",
+                                "items": [
+                                    "Understanding business objectives",
+                                    "Analyzing processes end-to-end",
+                                    "Communicating technical tradeoffs to non-technical stakeholders",
+                                    "Approaching automation from both an operational and a strategic perspective"
+                                ]
+                            },
+                            "province": "Mexico City",
+                            "country": "Mexico",
+                            "institution": "Autonomous Technological Institute of Mexico (ITAM)",
+                            "tags": ["WES Evaluated"]
+                        },
+                        "es": {
+                            "title": "Maestría en Administración de Empresas (MBA)",
+                            "description": "El MBA conecta mi trabajo de ingeniería con la estrategia de negocio — es la razón por la que puedo vincular la ejecución técnica con resultados operativos y de negocio reales.",
+                            "list": {
+                                "title": "Lo que perfeccionó",
+                                "items": [
+                                    "Comprender objetivos de negocio",
+                                    "Analizar procesos de principio a fin",
+                                    "Comunicar tradeoffs técnicos a audiencias no técnicas",
+                                    "Abordar la automatización desde una perspectiva operativa y estratégica a la vez"
+                                ]
+                            },
+                            "province": "Ciudad de México",
+                            "country": "México",
+                            "institution": "Instituto Tecnológico Autónomo de México (ITAM)",
+                            "tags": ["Evaluado por WES"]
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 3,
+                    "dateStart": {"year": 2024, "month": 8},
+                    "dateEnd": {"year": 2025, "month": 3},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-graduation-cap",
+                    "fallbackFaIconColor": "#17b8a6",
+                    "locales": {
+                        "en": {
+                            "title": "Ontario College Graduate Certificate — Virtualization & Cloud Computing",
+                            "description": "A formal specialization in cloud computing, virtualization, cloud infrastructure, cloud application environments, cloud networking, monitoring, and automation.",
+                            "list": null,
+                            "province": "Waterloo",
+                            "country": "Ontario, Canada",
+                            "institution": "Conestoga College",
+                            "tags": []
+                        },
+                        "es": {
+                            "title": "Graduate Certificate de Ontario College — Virtualización y Cloud Computing",
+                            "description": "Una especialización formal en cloud computing, virtualización, infraestructura cloud, entornos de aplicaciones cloud, redes cloud, monitoreo y automatización.",
+                            "list": null,
+                            "province": "Waterloo",
+                            "country": "Ontario, Canadá",
+                            "institution": "Conestoga College",
+                            "tags": []
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 4,
+                    "dateStart": {"year": 2025, "month": 8},
+                    "dateEnd": {"string": "now"},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-graduation-cap",
+                    "fallbackFaIconColor": "#2854e0",
+                    "locales": {
+                        "en": {
+                            "title": "Master of Computer Science",
+                            "description": "Currently completing a Master of Computer Science, expected August 2026.",
+                            "list": null,
+                            "province": "Brampton",
+                            "country": "Ontario, Canada",
+                            "institution": "Algoma University",
+                            "tags": []
+                        },
+                        "es": {
+                            "title": "Maestría en Ciencias de la Computación",
+                            "description": "Actualmente cursando una Maestría en Ciencias de la Computación, con conclusión esperada en agosto de 2026.",
+                            "list": null,
+                            "province": "Brampton",
+                            "country": "Ontario, Canadá",
+                            "institution": "Algoma University",
+                            "tags": []
+                        }
+                    },
+                    "links": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": {"title": "Certifications & Credentials"},
+                "es": {"title": "Certificaciones y Credenciales"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": {"year": 2025, "month": 1},
+                    "fallbackFaIcon": "fa-brands fa-google",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "Set Up an App Dev Environment on Google Cloud — Google Cloud Skill Badge",
+                            "description": "Google Cloud Skill Badge, earned February 2025.",
+                            "institution": "Google Cloud"
+                        },
+                        "es": {
+                            "title": "Set Up an App Dev Environment on Google Cloud — Google Cloud Skill Badge",
+                            "description": "Google Cloud Skill Badge, obtenido en febrero de 2025.",
+                            "institution": "Google Cloud"
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 2,
+                    "dateStart": {"year": 2025, "month": 1},
+                    "fallbackFaIcon": "fa-brands fa-google",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "Set Up a Google Cloud Network — Google Cloud Skill Badge",
+                            "description": "Google Cloud Skill Badge, earned February 2025.",
+                            "institution": "Google Cloud"
+                        },
+                        "es": {
+                            "title": "Set Up a Google Cloud Network — Google Cloud Skill Badge",
+                            "description": "Google Cloud Skill Badge, obtenido en febrero de 2025.",
+                            "institution": "Google Cloud"
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 3,
+                    "dateStart": {"year": 2025, "month": 8},
+                    "fallbackFaIcon": "fa-brands fa-aws",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "AWS Certified Solutions Architect – Associate — In Progress",
+                            "description": "Currently preparing for this certification. Not yet completed.",
+                            "institution": "Amazon Web Services"
+                        },
+                        "es": {
+                            "title": "AWS Certified Solutions Architect – Associate — En Progreso",
+                            "description": "Actualmente en preparación para esta certificación. Aún no completada.",
+                            "institution": "Amazon Web Services"
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 4,
+                    "dateStart": {"year": 2025, "month": 8},
+                    "fallbackFaIcon": "fa-solid fa-cubes",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "HashiCorp Certified: Terraform Associate — In Progress",
+                            "description": "Currently preparing for this certification. Not yet completed.",
+                            "institution": "HashiCorp"
+                        },
+                        "es": {
+                            "title": "HashiCorp Certified: Terraform Associate — En Progreso",
+                            "description": "Actualmente en preparación para esta certificación. Aún no completada.",
+                            "institution": "HashiCorp"
+                        }
+                    },
+                    "links": []
+                }
+            ]
+        }
+    ]
+}

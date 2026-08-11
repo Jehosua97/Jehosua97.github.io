@@ -1,0 +1,187 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleSkills",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 2,
+                "transparent_item_icon_background": true,
+                "small_icons": false,
+                "chart": null
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-arrows-spin",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Business Process Automation",
+                            "description": "Analyzing repetitive workflows and building practical automations with n8n, Python, APIs, webhooks, validation, and approval steps — data entry, notifications, document routing, system sync, and scheduled tasks."
+                        },
+                        "es": {
+                            "title": "Automatización de Procesos de Negocio",
+                            "description": "Analizo flujos repetitivos y construyo automatizaciones prácticas con n8n, Python, APIs, webhooks, validación y pasos de aprobación — captura de datos, notificaciones, enrutamiento de documentos, sincronización de sistemas y tareas programadas."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-plug",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "API & System Integration",
+                            "description": "Connecting applications and business systems through REST APIs, webhooks, structured data contracts, and PostgreSQL, so information moves reliably between the tools your team already uses."
+                        },
+                        "es": {
+                            "title": "Integración de APIs y Sistemas",
+                            "description": "Conecto aplicaciones y sistemas de negocio mediante APIs REST, webhooks, contratos de datos estructurados y PostgreSQL, para que la información fluya de forma confiable entre las herramientas que ya usa tu equipo."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-cloud-arrow-up",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Cloud & Delivery Automation",
+                            "description": "Improving deployment consistency with Terraform, CloudFormation, Docker, Kubernetes, and CI/CD pipelines, so releases become repeatable instead of risky."
+                        },
+                        "es": {
+                            "title": "Cloud y Automatización de Entrega",
+                            "description": "Mejoro la consistencia de los despliegues con Terraform, CloudFormation, Docker, Kubernetes y pipelines de CI/CD, para que cada release sea repetible en vez de riesgoso."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-gauge-high",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Monitoring & Reliability",
+                            "description": "Setting up monitoring, alerting, dashboards, and operational visibility with tools like Datadog, Grafana, and Zabbix, so issues surface before they become incidents."
+                        },
+                        "es": {
+                            "title": "Monitoreo y Confiabilidad",
+                            "description": "Implemento monitoreo, alertas, dashboards y visibilidad operativa con herramientas como Datadog, Grafana y Zabbix, para detectar problemas antes de que se conviertan en incidentes."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-robot",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "AI-Ready Workflow Design",
+                            "description": "Identifying where AI-assisted steps can fit into a business workflow while preserving validation, human approvals, traceability, and security boundaries — no black-box automation."
+                        },
+                        "es": {
+                            "title": "Diseño de Workflows Listos para IA",
+                            "description": "Identifico dónde pueden integrarse pasos asistidos por IA en un flujo de negocio, preservando validación, aprobaciones humanas, trazabilidad y límites de seguridad — sin automatización de caja negra."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "How We'll Work Together"},
+                "es": {"title": "Cómo Trabajaremos Juntos"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 1,
+                "transparent_item_icon_background": true,
+                "small_icons": true,
+                "chart": null
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-magnifying-glass",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "1. Discover", "description": "Understanding the workflow, systems, bottlenecks, risks, and the business outcome you actually need."},
+                        "es": {"title": "1. Descubrir", "description": "Entender el flujo de trabajo, los sistemas, los cuellos de botella, los riesgos y el resultado de negocio que realmente necesitas."}
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-pen-ruler",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "2. Design", "description": "Creating an automation and integration plan with clear boundaries and success criteria."},
+                        "es": {"title": "2. Diseñar", "description": "Crear un plan de automatización e integración con límites claros y criterios de éxito."}
+                    }
+                },
+                {
+                    "id": 3,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-hammer",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "3. Build", "description": "Implementing the workflow, APIs, infrastructure, and supporting services."},
+                        "es": {"title": "3. Construir", "description": "Implementar el flujo de trabajo, las APIs, la infraestructura y los servicios de soporte."}
+                    }
+                },
+                {
+                    "id": 4,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-circle-check",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "4. Validate", "description": "Testing expected behavior, errors, security controls, approvals, and data contracts."},
+                        "es": {"title": "4. Validar", "description": "Probar el comportamiento esperado, errores, controles de seguridad, aprobaciones y contratos de datos."}
+                    }
+                },
+                {
+                    "id": 5,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-chart-line",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "5. Monitor & Improve", "description": "Adding operational visibility and refining the workflow based on measurable results."},
+                        "es": {"title": "5. Monitorear y Mejorar", "description": "Agregar visibilidad operativa y refinar el flujo de trabajo con base en resultados medibles."}
+                    }
+                }
+            ]
+        }
+    ]
+}

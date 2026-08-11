@@ -1,0 +1,94 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "title": null,
+                    "category_all": "All",
+                    "category_ml": "Machine Learning",
+                    "category_automation": "Automation",
+                    "category_cloud": "Cloud"
+                },
+                "es": {
+                    "title": null,
+                    "category_all": "Todos",
+                    "category_ml": "Machine Learning",
+                    "category_automation": "Automatización",
+                    "category_cloud": "Cloud"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-chart-line",
+                    "fallbackFaIconColor": "#17b8a6",
+                    "category": "ml",
+                    "locales": {
+                        "en": {
+                            "title": "Sustainable Telecom Churn & E-Waste ML",
+                            "description": "<p><strong>Problem:</strong> Telecom providers lose revenue to customer churn, and every churned device is also a potential source of electronic waste — a connection that's rarely analyzed together.</p><p><strong>Approach:</strong> Built an end-to-end machine learning workflow covering data preprocessing, class-imbalance handling with SMOTE, comparison across four model families (Logistic Regression, SVM, XGBoost, and a Multilayer Perceptron), cross-validated tuning with GridSearchCV, and decision-threshold optimization.</p><p><strong>Outcome:</strong> The optimized Logistic Regression model reached <strong>80.62% accuracy</strong> with a <strong>0.61 churn recall</strong>, and the analysis connected churn drivers to a sustainability and e-waste perspective.</p><p><strong>Engineering considerations:</strong> Comparing model families under class imbalance highlighted the tradeoff between overall accuracy and churn recall — the metric that actually matters for a retention use case — which shaped the final threshold choice.</p>",
+                            "tags": ["Python", "scikit-learn", "XGBoost", "SMOTE", "GridSearchCV", "Logistic Regression"]
+                        },
+                        "es": {
+                            "title": "Sustainable Telecom Churn & E-Waste ML",
+                            "description": "<p><strong>Problema:</strong> Las empresas de telecomunicaciones pierden ingresos por la fuga de clientes (churn), y cada cliente perdido también representa una posible fuente de residuos electrónicos — una relación que rara vez se analiza en conjunto.</p><p><strong>Enfoque:</strong> Construí un flujo de machine learning de extremo a extremo que incluye preprocesamiento de datos, manejo de desbalance de clases con SMOTE, comparación entre cuatro familias de modelos (Regresión Logística, SVM, XGBoost y un Perceptrón Multicapa), ajuste con validación cruzada mediante GridSearchCV, y optimización del umbral de decisión.</p><p><strong>Resultado:</strong> El modelo de Regresión Logística optimizado alcanzó <strong>80.62% de accuracy</strong> con un <strong>recall de churn de 0.61</strong>, y el análisis conectó los factores de churn con una perspectiva de sostenibilidad y residuos electrónicos.</p><p><strong>Consideraciones técnicas:</strong> Comparar familias de modelos bajo desbalance de clases evidenció el tradeoff entre accuracy general y el recall de churn — la métrica que realmente importa para retención — lo cual definió la elección final del umbral.</p>",
+                            "tags": ["Python", "scikit-learn", "XGBoost", "SMOTE", "GridSearchCV", "Regresión Logística"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Jehosua97/ML-customer-churn-prediction", "stringKey": "view_on_github"}
+                    ]
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-diagram-project",
+                    "fallbackFaIconColor": "#2854e0",
+                    "category": "automation",
+                    "locales": {
+                        "en": {
+                            "title": "Business AI Automation Hub",
+                            "description": "<p><strong>Problem:</strong> Business automations built as fragile point-to-point scripts are hard to audit, easy to break, and risky to run without human checkpoints.</p><p><strong>Approach:</strong> Designed a modular business automation platform using typed services and n8n workflows, with input validation, webhook signature verification, structured logging, human approval gates, and PostgreSQL persistence, all backed by a Vitest test suite and clearly defined service boundaries.</p><p><strong>Outcome:</strong> A safe, auditable automation architecture with human-in-the-loop controls at every risk point, and service contracts designed to leave room for future LLM-assisted steps.</p><p><strong>Engineering considerations:</strong> The architecture is prepared for future LLM integrations through its typed contracts and boundaries — it does not include a production LLM integration today.</p>",
+                            "tags": ["TypeScript", "n8n", "Docker", "PostgreSQL", "REST APIs", "Webhooks"]
+                        },
+                        "es": {
+                            "title": "Business AI Automation Hub",
+                            "description": "<p><strong>Problema:</strong> Las automatizaciones de negocio construidas como scripts frágiles punto a punto son difíciles de auditar, fáciles de romper y riesgosas de ejecutar sin puntos de control humano.</p><p><strong>Enfoque:</strong> Diseñé una plataforma modular de automatización de negocio usando servicios tipados y workflows de n8n, con validación de entradas, verificación de firmas de webhooks, logging estructurado, puntos de aprobación humana y persistencia en PostgreSQL, respaldado por un suite de pruebas con Vitest y límites de servicio claramente definidos.</p><p><strong>Resultado:</strong> Una arquitectura de automatización segura y auditable, con controles humanos en cada punto de riesgo, y contratos de servicio pensados para dejar espacio a futuros pasos asistidos por LLM.</p><p><strong>Consideraciones técnicas:</strong> La arquitectura está preparada para futuras integraciones LLM gracias a sus contratos y límites tipados — actualmente no incluye una integración LLM en producción.</p>",
+                            "tags": ["TypeScript", "n8n", "Docker", "PostgreSQL", "REST APIs", "Webhooks"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Jehosua97/n8nMultiServiceAutomation", "stringKey": "view_on_github"}
+                    ]
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-cloud",
+                    "fallbackFaIconColor": "#2854e0",
+                    "category": "cloud",
+                    "locales": {
+                        "en": {
+                            "title": "Hybrid Cloud Monitoring & Automation Platform",
+                            "description": "<p><strong>Problem:</strong> Hybrid cloud environments are hard to keep observable and reproducible without a deliberate infrastructure and monitoring design.</p><p><strong>Approach:</strong> Designed a hybrid cloud monitoring and automation platform for my Conestoga College capstone, combining Infrastructure as Code, Python automation scripts, automated alerting, and Grafana visualization dashboards.</p><p><strong>Outcome:</strong> Recognized by faculty for innovation and technical robustness.</p><p><strong>Engineering considerations:</strong> Treating monitoring and alerting as first-class infrastructure — defined in code alongside the resources they observe — made the environment easier to reproduce and reason about.</p><p class=\"text-3 text-light-6 mt-3\">This capstone project does not have a public repository at this time.</p>",
+                            "tags": ["AWS", "Terraform", "Docker", "Python", "Grafana"]
+                        },
+                        "es": {
+                            "title": "Hybrid Cloud Monitoring & Automation Platform",
+                            "description": "<p><strong>Problema:</strong> Los entornos cloud híbridos son difíciles de mantener observables y reproducibles sin un diseño deliberado de infraestructura y monitoreo.</p><p><strong>Enfoque:</strong> Diseñé una plataforma híbrida de monitoreo y automatización cloud como proyecto capstone en Conestoga College, combinando Infrastructure as Code, scripts de automatización en Python, alertas automatizadas y dashboards de visualización en Grafana.</p><p><strong>Resultado:</strong> Reconocido por el cuerpo docente por su innovación y solidez técnica.</p><p><strong>Consideraciones técnicas:</strong> Tratar el monitoreo y las alertas como infraestructura de primera clase — definidos en código junto con los recursos que observan — facilitó reproducir y razonar sobre el entorno.</p><p class=\"text-3 text-light-6 mt-3\">Este proyecto capstone no cuenta con un repositorio público por el momento.</p>",
+                            "tags": ["AWS", "Terraform", "Docker", "Python", "Grafana"]
+                        }
+                    },
+                    "links": []
+                }
+            ]
+        }
+    ]
+}

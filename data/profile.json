@@ -1,0 +1,56 @@
+{
+    "name": "Jehosua A. Joya, MCS, MBA, B.Eng.",
+    "profilePictureUrl": "images/pictures/avatar.svg",
+    "locales": {
+        "en": {
+            "credits": "Template by <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "Cloud, Software & Automation Engineer"
+        },
+        "es": {
+            "credits": "Plantilla de <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "Ingeniero de Cloud, Software y Automatización"
+        }
+    },
+    "contactOptions": [
+        {
+            "id": "email",
+            "value": "joya.jehosua@gmail.com",
+            "valueShort": "joya.jehosua@gmail.com",
+            "faIcon": "fa-regular fa-envelope",
+            "href": "mailto:joya.jehosua@gmail.com",
+            "copy": true
+        },
+        {
+            "id": "linkedin",
+            "value": "linkedin.com/in/jehosua-joya",
+            "valueShort": "LinkedIn",
+            "faIcon": "fa-brands fa-linkedin",
+            "href": "https://www.linkedin.com/in/jehosua-joya/",
+            "copy": false
+        },
+        {
+            "id": "github",
+            "value": "github.com/Jehosua97",
+            "valueShort": "GitHub",
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/Jehosua97",
+            "copy": false
+        },
+        {
+            "id": "phone",
+            "value": "+1 (437) 878-1645",
+            "valueShort": "(437) 878-1645",
+            "faIcon": "fa-solid fa-phone",
+            "href": "tel:+14378781645",
+            "copy": true
+        },
+        {
+            "id": "download_resume",
+            "value": "",
+            "valueShort": "",
+            "faIcon": "fa-solid fa-file-pdf",
+            "href": "/pdf/resume.pdf",
+            "copy": false
+        }
+    ]
+}

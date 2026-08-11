@@ -1,0 +1,36 @@
+{
+    "categories": [
+        {
+            "id": "profile",
+            "faIcon": "fa-regular fa-user",
+            "locales": {
+                "en": {"nav_label": "Profile"},
+                "es": {"nav_label": "Perfil"}
+            }
+        },
+        {
+            "id": "work",
+            "faIcon": "fa-regular fa-folder-open",
+            "locales": {
+                "en": {"nav_label": "Work"},
+                "es": {"nav_label": "Trabajo"}
+            }
+        },
+        {
+            "id": "background",
+            "faIcon": "fa-regular fa-clock",
+            "locales": {
+                "en": {"nav_label": "Background"},
+                "es": {"nav_label": "Trayectoria"}
+            }
+        },
+        {
+            "id": "connect",
+            "faIcon": "fa-regular fa-paper-plane",
+            "locales": {
+                "en": {"nav_label": "Connect"},
+                "es": {"nav_label": "Contacto"}
+            }
+        }
+    ]
+}

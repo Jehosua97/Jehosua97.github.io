@@ -1,0 +1,113 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": {"year": 2020, "month": 9},
+                    "dateEnd": {"year": 2022, "month": 8},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-mobile-screen-button",
+                    "fallbackFaIconColor": "#17b8a6",
+                    "locales": {
+                        "en": {
+                            "title": "IT Solutions & Product Manager Jr · Full Stack Developer · Intern",
+                            "description": "Combined IT solutions, product management, and full-stack development to translate business requirements into working software and automation.",
+                            "list": {
+                                "title": "Key Achievements",
+                                "items": [
+                                    "Analyzed stakeholder workflows and translated business and technical requirements into working software.",
+                                    "Developed <strong>100+ APIs</strong> and system integrations, improving cross-platform data throughput by <strong>40%</strong>.",
+                                    "Developed <strong>40+ web applications</strong> using JavaScript technologies.",
+                                    "Automated approximately <strong>30%</strong> of manual workflows using Python, Bash, and Selenium.",
+                                    "Saved <strong>20+ hours per week per department</strong> through automation.",
+                                    "Received the <strong>\"Best Intern, Top Minds Mexico\"</strong> recognition in 2021."
+                                ]
+                            },
+                            "province": "Mexico City",
+                            "country": "Mexico",
+                            "institution": "Huawei",
+                            "tags": ["Python", "Bash", "Selenium", "JavaScript", "REST APIs"]
+                        },
+                        "es": {
+                            "title": "IT Solutions & Product Manager Jr · Full Stack Developer · Becario",
+                            "description": "Combiné soluciones de TI, gestión de producto y desarrollo full-stack para traducir requerimientos de negocio en software funcional y automatización.",
+                            "list": {
+                                "title": "Logros Clave",
+                                "items": [
+                                    "Analicé flujos de trabajo de stakeholders y traduje requerimientos de negocio y técnicos en software funcional.",
+                                    "Desarrollé <strong>más de 100 APIs</strong> e integraciones de sistemas, mejorando el throughput de datos entre plataformas en <strong>40%</strong>.",
+                                    "Desarrollé <strong>más de 40 aplicaciones web</strong> usando tecnologías JavaScript.",
+                                    "Automaticé aproximadamente el <strong>30%</strong> de los flujos manuales usando Python, Bash y Selenium.",
+                                    "Ahorré <strong>más de 20 horas semanales por departamento</strong> mediante automatización.",
+                                    "Recibí el reconocimiento <strong>\"Best Intern, Top Minds Mexico\"</strong> en 2021."
+                                ]
+                            },
+                            "province": "Ciudad de México",
+                            "country": "México",
+                            "institution": "Huawei",
+                            "tags": ["Python", "Bash", "Selenium", "JavaScript", "REST APIs"]
+                        }
+                    },
+                    "links": []
+                },
+                {
+                    "id": 2,
+                    "dateStart": {"year": 2022, "month": 9},
+                    "dateEnd": {"string": "now"},
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-server",
+                    "fallbackFaIconColor": "#2854e0",
+                    "locales": {
+                        "en": {
+                            "title": "Software Configuration Management Engineer I",
+                            "description": "Deploying, operating, and standardizing cloud infrastructure and delivery pipelines for business-critical workloads across globally distributed engineering teams.",
+                            "list": {
+                                "title": "Key Achievements",
+                                "items": [
+                                    "Deployed, operated, and troubleshot <strong>100+</strong> business-critical Docker and Kubernetes workloads, contributing to <strong>99.95% uptime</strong>.",
+                                    "Automated CI/CD pipelines for <strong>40+ AWS applications</strong> using Jenkins, GitLab CI, and Terraform.",
+                                    "Reduced deployment failures by <strong>30%</strong> and shortened release cycles by <strong>20%</strong> through repeatable delivery practices.",
+                                    "Implemented Infrastructure as Code with Terraform and CloudFormation, standardizing AWS environments across global application and engineering teams.",
+                                    "Used Datadog, Grafana, and Zabbix for monitoring, alerting, troubleshooting, and operational visibility.",
+                                    "Supported IAM optimization, vulnerability scanning, secrets management, and GDPR-aligned engineering practices."
+                                ]
+                            },
+                            "province": "Remote",
+                            "country": "Mexico City, Mexico",
+                            "institution": "Solera Holdings",
+                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
+                        },
+                        "es": {
+                            "title": "Software Configuration Management Engineer I",
+                            "description": "Despliego, opero y estandarizo infraestructura cloud y pipelines de entrega para workloads críticos de negocio junto a equipos de ingeniería distribuidos globalmente.",
+                            "list": {
+                                "title": "Logros Clave",
+                                "items": [
+                                    "Desplegué, operé y solucioné problemas en <strong>más de 100</strong> workloads críticos de Docker y Kubernetes, contribuyendo a un <strong>uptime del 99.95%</strong>.",
+                                    "Automaticé pipelines de CI/CD para <strong>más de 40 aplicaciones AWS</strong> usando Jenkins, GitLab CI y Terraform.",
+                                    "Reduje las fallas de despliegue en <strong>30%</strong> y acorté los ciclos de release en <strong>20%</strong> mediante prácticas de entrega repetibles.",
+                                    "Implementé Infrastructure as Code con Terraform y CloudFormation, estandarizando entornos AWS entre equipos globales de aplicaciones e ingeniería.",
+                                    "Utilicé Datadog, Grafana y Zabbix para monitoreo, alertas, troubleshooting y visibilidad operativa.",
+                                    "Apoyé la optimización de IAM, escaneo de vulnerabilidades, gestión de secretos y prácticas de ingeniería alineadas con GDPR."
+                                ]
+                            },
+                            "province": "Remoto",
+                            "country": "Ciudad de México, México",
+                            "institution": "Solera Holdings",
+                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
+                        }
+                    },
+                    "links": []
+                }
+            ]
+        }
+    ]
+}
