@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jehosua97.github.io/sitemap.xml

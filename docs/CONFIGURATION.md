@@ -1,96 +1,269 @@
-# Portfolio configuration
+## Template Customization
 
-## Content
+### 1. Quickly customizing the colors
 
-All primary site content is stored in `src/data/portfolio.js`. This includes:
+You can easily customize the theme colors to match your style. Just head to `src/scss/_variables.scss` and tweak the color variables. For example, if you want your resume to have a green theme instead of purple:
 
-- Identity and contact information
-- Impact metrics
-- Employer and business audience paths
-- Projects and project artifacts
-- Services and delivery process
-- Professional experience
-- Education and credentials
-- Technical toolkit
-
-Keep the displayed name exactly as `Jehosua A. Joya, MCS, MBA, B.Eng.` whenever it appears.
-
-## Contact delivery
-
-The contact form supports any provider that accepts a standard `POST` with `FormData` and returns a successful HTTP status. Formspree is one compatible example, but no provider is assumed.
-
-1. Create a form with the chosen provider.
-2. Copy `.env.example` to `.env.local`.
-3. Set the provider's HTTPS endpoint:
-
-```env
-VITE_CONTACT_FORM_ENDPOINT=https://form-provider.example/your-form-id
+```scss
+$primary: #439631; /** making the primary color green **/
+$default-section-background: #f0f3ef; /** changing the background color **/
+$text-default-color: #12290f; /** changing the color of the texts **/
+$loader-background: #224118; /** making the loading screen background green **/
+$nav-background: #16290f; /** changing the nav items to dark green **/
 ```
 
-4. Restart the Vite development server.
-5. Submit a test inquiry and verify both the provider dashboard and receiving inbox.
-
-For GitHub Pages, add the same value as the Actions repository secret `VITE_CONTACT_FORM_ENDPOINT`; the deployment workflow passes it to Vite at build time.
-
-The form includes browser validation, an invisible honeypot field, a minimum interaction time, explicit consent, and visible success/error states. The provider must still supply server-side spam controls, retention rules, and data-processing terms.
-
-If the variable is blank, the site uses a transparent `mailto:` fallback. It never displays a false success message.
-
-## Project artifacts
-
-Only real or explicitly marked artifacts belong in `public/images/projects/`.
-
-- The churn images are outputs from the project's public Jupyter notebooks and published README results.
-- The automation visuals use real node names and states from its public n8n workflow definitions. They are repository views, not claimed product screenshots.
-- The capstone page contains a clearly labeled replacement panel until an approved dashboard or architecture capture is supplied.
-
-Each image entry in `src/data/portfolio.js` needs:
-
-- A descriptive `alt` text
-- A factual caption
-- A stable local file path
-- Confirmation that the image is safe to publish
-
-## Professional portrait
-
-The optimized portrait is `public/images/profile/jehosua-joya.jpg`. Preserve the supplied original outside the repository. If the source changes, export a square JPEG at approximately 960 × 960 pixels and keep it under roughly 250 KB where practical.
-
-## Résumé
-
-The site downloads `public/pdf/Jehosua-A-Joya-Resume.pdf`. The readable source is `docs/resume-source.html`.
-
-To regenerate it with Chrome on Windows:
-
-```powershell
-& 'C:\Program Files\Google\Chrome\Application\chrome.exe' `
-  --headless `
-  --disable-gpu `
-  --no-pdf-header-footer `
-  --print-to-pdf='C:\absolute\path\to\public\pdf\Jehosua-A-Joya-Resume.pdf' `
-  'file:///C:/absolute/path/to/docs/resume-source.html'
+You can also change the splash screen color on `index.html`:
+```html
+<body style="background-color:#224118">
+</body>
 ```
 
-Open the generated PDF and confirm that it contains two Letter-sized pages and that links remain clickable.
+Here's a [live example](https://rbtutorials.github.io/alana-richard-vue-resume/) illustrating the color scheme after the changes shown above.
 
-## SEO and domain
+### 2. Changing the content
 
-The canonical production URL is currently `https://jehosua97.github.io/`, matching the repository remote. If a custom domain is added, update:
+All portfolio content, including texts and images, is located in the public folder at the root level. Within this folder, you'll find two key directories:
 
-- Canonical and Open Graph URLs in `index.html`
-- URLs generated in `src/router.js`
-- Person and project structured data
-- `public/sitemap.xml`
-- `public/robots.txt`
-- `public/site.webmanifest`
-- URLs in `scripts/generate-static-routes.js`
+- `public/data` ➔ Contains JSON files with the portfolio's texts and general configurations.
+- `public/images` ➔ Contains all the images used in the portfolio.
 
-## Claims checklist
+To customize the content of the portfolio, simply edit the JSON files and swap out the images as needed. It's that easy!
 
-Before changing content, confirm that:
+### 3. Adding and removing languages
 
-- AWS Solutions Architect — Associate remains labeled `In Progress` until earned.
-- HashiCorp Terraform Associate remains labeled `In Progress` until earned.
-- Google credentials remain labeled `Google Cloud Skill Badge`, not professional certification.
-- The automation project does not claim complete production LLM integrations.
-- The capstone does not link to an unverified public repository.
-- Past career metrics are not reframed as future client guarantees.
+To add or remove languages, open `public/data/settings.json` and modify the `supportedLanguages` field as needed. Use the `default` property to specify the fallback language that should be used if the application doesn't support the user's preferred language.
+
+```json
+{
+    "supportedLanguages": [
+        {
+            "name": "English",
+            "id": "en",
+            "flagUrl": "images/flags/en.png",
+            "default": true
+        },
+
+        {
+            "name": "日本語",
+            "id": "ja",
+            "flagUrl": "images/flags/ja.png"
+        }
+    ]
+}
+```
+
+The `public/images/flags/` folder already contains a collection of flags for commonly used languages. If you require a specific flag icon that isn't there, you can download it [here](https://www.flaticon.com/packs/countrys-flags) for free.
+
+To **deactivate support** for multiple languages, keep only a single language within the array. This will automatically hide the language picker menu.
+
+### 4. Adding, removing, and reordering sections
+
+Adding, removing or reordering the sections can be achieved by making modifications to the `sections` array inside `public/data/sections.json`:
+
+```json
+{
+    "sections": [
+        {
+            "id": "about",
+            "categoryId": "home",
+            "jsonPath": "/sections/cover.json",
+            "faIcon": "fa-solid fa-address-card",
+            "type": "centered",
+            "locales": {
+                "en": {
+                    "title": "Welcome to my *resume!*",
+                    "title_short": "Welcome!",
+                    "description": null,
+                    "nav_label": "About"
+                }
+            }
+        }
+    ]
+}
+```
+Each section entry comprises the following fields:
+
+| Field      | Description                                                                                                 |  
+|------------|-------------------------------------------------------------------------------------------------------------|
+| id         | A unique identifier for the section.                                                                        |
+| categoryId | Specifies the category to which the section belongs (used for grouping sections in the mobile navigation).  |
+| jsonPath   | Path to the file containing the section's content.                                                          | 
+| faIcon     | The FontAwesome icon for this section, used to customize its link in the navigation components.             |
+| type       | Specifies the section's layout style, which can be `centered`, `row`, or `column`.                          |                                                                   
+
+The `locales` field can include the following entries:
+
+| Field          | Required? | Description                                                      |
+|----------------|-----------|------------------------------------------------------------------|
+| title          | YES       | The main title of the section.                                   |
+| title_short    | NO        | A condensed version of the main title, used for smaller screens. |
+| description    | NO        | A text that will be displayed below the section title.           |
+| nav_label      | YES       | The label for the section link in the navigation menu.           |
+
+### 5. Categories
+
+The resume sections are organized into categories, which are used to generate the grouped tab navigation for mobile screens. To add, edit, or remove categories, open `data/sections/categories.json` and make the desired changes.
+
+### 6. Editing the section content
+
+You can customize a section's content by editing its corresponding JSON file. Each section in the app is made up of a set of articles, which are generic components used to display blocks of information. These components render the section along with its respective content.
+
+```json
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+
+            "items": []
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+
+            "items": []
+        }
+    ]
+}
+```
+
+Each article should have a unique ID, a component name, a settings object, and an array of items. Since each article requires different settings and item structures, refer to the existing examples on the project to understand how to properly build each section.
+
+List of available article types:
+
+| Component             | Description                                                       |
+|-----------------------|-------------------------------------------------------------------|
+| ArticleContactForm    | Displays a contact form that allows users to send a message.      |
+| ArticleContactOptions | Shows a list of available contact options.                        |
+| ArticlePortfolio      | Renders a clickable gallery of projects.                          |
+| ArticleProfile        | Displays a profile card with a bio and social links.              |
+| ArticleSkills         | Presents a dynamic list of skills or strengths in short snippets. |
+| ArticleThread         | Displays a thread of events or posts.                             |
+| ArticleTimeline       | Shows a timeline with images, descriptions, and dates.            |
+
+### 7. Localizing texts
+
+Place your translations for **static texts** in `public/data/strings.json`. This file serves as a central hub for all your global localization needs, making your translations accessible via the injectable method `localizeFromStrings`:
+
+```js
+const localizeFromStrings = inject("localizeFromStrings")
+const translation = localizeFromStrings("name")
+console.log(translation) // Will print "Nome" (en) or "Nombre" (es)
+```
+
+For translations specific to sections, you can create a custom `locales` field inside each article or article item:
+```json
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": { "hello": "Hello!" },
+                "es": { "hello": "Hola!" }
+            }
+        }
+    ]
+}
+```
+
+And then, use the following injectable function to fetch the translation:
+
+```js
+const localize = inject("localize")
+const translation = localize(section.articles[0].locales, "hello")
+console.log(translation) // Will print "Hello!" (en) or "Hola!" (es)
+```
+
+### 8. Contact form configuration
+
+The contact form component integrates `EmailJS`. EmailJS is a free service that allows you to send emails using JavaScript - without the need for a backend.
+
+To configure your contact form, follow these steps:
+
+- Create an EmailJS account (https://www.emailjs.com/)
+- In your EmailJS account panel, create an email service, which configures the provider that will send the emails (e.g., your Gmail or iCloud account).
+- Next, on your dashboard, create a new email template like this one:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .heading {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .message {
+            white-space: pre-line;
+            margin-top: 10px;
+            padding: 0 15px 15px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #269366;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="heading">New portfolio message! 📩 </div>
+    <div class="info"><span class="label">Name:</span> {{name}}</div>
+    <div class="info"><span class="label">Email:</span> {{email}}</div>
+    <div class="info"><span class="label">Subject:</span> {{custom_subject}}</div>
+
+    <div class="info"><span class="label">Message:</span></div>
+    <div class="message">
+        {{message}}
+    </div>
+</div>
+</body>
+</html>
+```
+
+- Now, open `public/data/sections/contact.json` in your project and fill in the `settings` dictionary with your account info:
+
+```json
+{
+    "settings": {
+        "contact_js_public_key": "YOUR_EMAIL_JS_PUBLIC_KEY",
+        "contact_js_service_id": "YOUR_EMAIL_JS_SERVICE_ID",
+        "contact_js_template_id": "YOUR_EMAIL_JS_TEMPLATE_ID"
+    }
+}
+```
+
+- And voilà! Now you can submit your first email!
