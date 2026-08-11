@@ -28,7 +28,9 @@ li.tag-item {
     background-color: $primary;
     color: $white;
     border-radius: 5px;
-    text-transform: lowercase;
+    text-transform: none;
+    font-family: $font-family-mono;
+    font-size: 0.8em;
     white-space: nowrap;
     user-select: none;
     transition: 0.2s background-color ease-out;

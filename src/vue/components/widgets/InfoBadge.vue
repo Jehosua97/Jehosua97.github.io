@@ -28,6 +28,7 @@ div.info-badge {
 
     padding: 4px 12px;
     font-size: 0.8rem;
+    font-family: $font-family-mono;
 
     i {
         margin-right: 5px;

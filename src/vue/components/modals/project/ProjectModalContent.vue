@@ -78,9 +78,9 @@ const blocks = computed(() => {
         {
             visibility: links?.length,
             titleClass: "",
-            title: localizeFromStrings("where_to_find"),
-            titleFaIcon: "fa-solid fa-globe",
-            description: localizeFromStrings("where_to_find_description")
+            title: localizeFromStrings("project_links"),
+            titleFaIcon: "fa-brands fa-github",
+            description: localizeFromStrings("project_links_description")
                 .replace("{project}", `<b>${localize(props.item.locales, "title")}</b>`),
             links: links.map((link) => {return {
                 href: link.href,

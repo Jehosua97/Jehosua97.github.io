@@ -15,6 +15,7 @@ import ArticleProfile from "/src/vue/components/articles/profile/ArticleProfile.
 import ArticleSkills from "/src/vue/components/articles/skills/ArticleSkills.vue"
 import ArticleTimeline from "/src/vue/components/articles/timeline/ArticleTimeline.vue"
 import ArticleThread from "/src/vue/components/articles/thread/ArticleThread.vue"
+import ArticleTagGroups from "/src/vue/components/articles/tags/ArticleTagGroups.vue"
 import ArticleUnavailable from "/src/vue/components/articles/unavailable/ArticleUnavailable.vue"
 import {computed} from "vue"
 
@@ -33,7 +34,8 @@ const ARTICLES_MAP = {
     ArticleProfile,
     ArticleSkills,
     ArticleThread,
-    ArticleTimeline
+    ArticleTimeline,
+    ArticleTagGroups
 }
 
 const mappedArticles = computed(() => {

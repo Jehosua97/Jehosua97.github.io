@@ -6,6 +6,7 @@
               @submit="_onFormSubmit">
             <ArticleContactFormFields v-if="shouldDisplayFormFields"
                                       :error-message="errorMessage"
+                                      :info-message="mailtoNoticeMessage"
                                       @input="_onInput"/>
 
             <ArticleContactFormThankYou v-else
@@ -48,12 +49,17 @@ const localizeFromStrings = inject("localizeFromStrings")
 /** @type {Function} */
 const scrollToTopOfCurrentSection = inject("scrollToTopOfCurrentSection")
 
+/** @type {{value:Profile}} */
+const profile = inject("profile")
+
 const name = ref("")
 const email = ref("")
 const subject = ref("")
 const message = ref("")
 const apiResponse = ref(null)
 const validationError = ref(null)
+const isEmailjsConfigured = ref(false)
+const mailtoNoticeVisible = ref(false)
 
 const shouldDisplayFormFields = computed(() => {
     return !apiResponse.value || !apiResponse.value.success
@@ -69,11 +75,21 @@ const errorMessage = computed(() => {
     return null
 })
 
+const mailtoNoticeMessage = computed(() => {
+    if(!mailtoNoticeVisible.value)
+        return null
+    return localizeFromStrings("mailto_fallback_notice")
+})
+
 onMounted(() => {
     const publicKey = props.model.getSetting("contact_js_public_key")
     const serviceId = props.model.getSetting("contact_js_service_id")
     const templateId = props.model.getSetting("contact_js_template_id")
-    emails.init(publicKey, serviceId, templateId)
+
+    if(publicKey && serviceId && templateId) {
+        emails.init(publicKey, serviceId, templateId)
+        isEmailjsConfigured.value = true
+    }
 })
 
 const _onInput = (field, value) => {
@@ -117,6 +133,11 @@ const _validate = () => {
 }
 
 const _submit = async () => {
+    if(!isEmailjsConfigured.value) {
+        _submitViaMailto()
+        return
+    }
+
     setSpinnerEnabled && setSpinnerEnabled(true, localizeFromStrings('sending_message'))
 
     const success = await emails.sendContact(name.value, email.value, subject.value, message.value)
@@ -124,6 +145,20 @@ const _submit = async () => {
 
     scrollToTopOfCurrentSection()
     setSpinnerEnabled && setSpinnerEnabled(false)
+}
+
+/**
+ * Fallback used whenever no EmailJS credentials are configured for this article.
+ * Opens the visitor's own e-mail client with the form fields pre-filled instead
+ * of silently failing or pretending the message was received by a server.
+ */
+const _submitViaMailto = () => {
+    const to = profile.value.getContactOptionWithId("email")?.getStaticValue(false) || ""
+    const mailSubject = encodeURIComponent(subject.value)
+    const mailBody = encodeURIComponent(`${message.value}\n\n— ${name.value} (${email.value})`)
+
+    mailtoNoticeVisible.value = true
+    window.location.href = `mailto:${to}?subject=${mailSubject}&body=${mailBody}`
 }
 </script>
 

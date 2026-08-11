@@ -7,43 +7,113 @@
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
-                "contact_list_ids": ["address", "email", "phone"],
-                "contact_circles_ids": ["instagram", "linkedin", "github", "download_resume"]
+                "contact_list_ids": ["email"],
+                "contact_circles_ids": ["linkedin", "github"]
             },
             "items": [
                 {
                     "id": 1,
                     "locales": {
                         "en": {
-                            "description": "I've been a UX designer for <strong>8 years</strong>, crafting user-friendly interfaces that feel natural, intuitive, and seamless across different devices. My passion lies in designing digital experiences that not only look great but also function effortlessly, making interactions smoother and more enjoyable."
+                            "description": "I build reliable systems and intelligent automations that create <strong>measurable business value</strong>."
                         },
                         "es": {
-                            "description": "Soy diseñador UX desde hace <strong>8 años</strong>, creando interfaces amigables que se sienten naturales, intuitivas y fluidas en diferentes dispositivos. Me apasiona diseñar experiencias digitales que no solo se vean bien, sino que también funcionen sin esfuerzo, haciendo que las interacciones sean más suaves y agradables."
-                        },
-                        "fr": {
-                            "description": "Je suis designer UX depuis <strong>8 ans</strong>, créant des interfaces conviviales qui se sentent naturelles, intuitives et fluides sur différents appareils. Ma passion est de concevoir des expériences numériques qui non seulement sont esthétiques, mais fonctionnent également sans effort, rendant les interactions plus fluides et agréables."
-                        },
-                        "zh": {
-                            "description": "我是一名拥有<strong>8年</strong>经验的UX设计师，专注于打造自然、直观且跨设备无缝的用户界面。我的热情在于设计数字体验，不仅外观出色，而且功能流畅，使交互更加顺畅和愉悦。"
+                            "description": "Construyo sistemas confiables y automatizaciones inteligentes que generan un <strong>impacto de negocio medible</strong>."
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "locales": {
                         "en": {
-                            "description": "I believe that good design should enhance people's lives, helping them navigate technology with ease and confidence. Let’s work together to bring ideas to life and build something truly amazing!"
+                            "description": "I am a Cloud, Software & Automation Engineer with <strong>5+ years</strong> of experience building APIs, cloud-native platforms, delivery pipelines, and business process automations. My MCS, MBA, and Computer Engineering background helps me connect technical execution with operational and customer priorities."
                         },
                         "es": {
-                            "description": "Creo que un buen diseño debe mejorar la vida de las personas, ayudándolas a navegar por la tecnología con facilidad y confianza. ¡Trabajemos juntos para dar vida a las ideas y construir algo verdaderamente asombroso!"
-                        },
-                        "fr": {
-                            "description": "Je crois qu'un bon design doit améliorer la vie des gens, les aidant à naviguer dans la technologie avec aisance et confiance. Travaillons ensemble pour donner vie aux idées et construire quelque chose de vraiment incroyable !"
-                        },
-                        "zh": {
-                            "description": "我相信好的设计应该提升人们的生活，帮助他们轻松自信地使用技术。让我们一起工作，将创意变为现实，打造真正令人惊叹的作品！"
+                            "description": "Soy Ingeniero de Cloud, Software y Automatización con <strong>más de 5 años</strong> de experiencia desarrollando APIs, plataformas cloud-native, pipelines de entrega y automatización de procesos de negocio. Mi formación en Ciencias de la Computación (MCS), MBA e Ingeniería en Computación me permite conectar la ejecución técnica con las prioridades operativas y del negocio."
                         }
+                    }
+                },
+                {
+                    "id": 3,
+                    "locales": {
+                        "en": {
+                            "description": "I'm based in Brampton, Ontario, Canada, and open to engineering opportunities and selected automation projects."
+                        },
+                        "es": {
+                            "description": "Vivo en Brampton, Ontario, Canadá, y estoy abierto a oportunidades de ingeniería y a proyectos de automatización seleccionados."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": "Impact at a Glance",
+                    "description": "These figures describe documented results from past professional experience — not guarantees for future engagements."
+                },
+                "es": {
+                    "title": "Impacto en Cifras",
+                    "description": "Estas cifras describen resultados documentados de experiencia profesional pasada, no garantías para proyectos futuros."
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 2,
+                "transparent_item_icon_background": true,
+                "small_icons": false,
+                "chart": null
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-calendar-check",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "5+ Years", "description": "of industry experience"},
+                        "es": {"title": "5+ Años", "description": "de experiencia en la industria"}
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-server",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "100+", "description": "cloud-native workloads supported"},
+                        "es": {"title": "100+", "description": "workloads cloud-native soportados"}
+                    }
+                },
+                {
+                    "id": 3,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-signal",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "99.95%", "description": "platform uptime contributed to"},
+                        "es": {"title": "99.95%", "description": "de uptime de plataforma"}
+                    }
+                },
+                {
+                    "id": 4,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-diagram-project",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "100+", "description": "APIs and system integrations delivered"},
+                        "es": {"title": "100+", "description": "APIs e integraciones entregadas"}
                     }
                 }
             ]

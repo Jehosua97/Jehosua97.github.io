@@ -5,6 +5,11 @@
                class="mb-3"
                :message="errorMessage"/>
 
+        <Alert type="info"
+               v-if="infoMessage"
+               class="mb-3"
+               :message="infoMessage"/>
+
         <div class="contact-form-row mt-0 mt-xl-1">
             <!-- Left Column -->
             <div class="contact-form-column contact-form-column-left">
@@ -65,6 +70,7 @@ import {inject, ref} from "vue"
 
 const props = defineProps({
     errorMessage: String,
+    infoMessage: String,
 })
 
 const emit = defineEmits(["input"])

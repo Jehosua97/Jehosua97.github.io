@@ -5,7 +5,8 @@ $fa-font-path:"@fortawesome/fontawesome-free/webfonts";
 $min-contrast-ratio: 1.5 !default;
 
 /** Typography **/
-$font-family-base: 'Saira', sans-serif;
+$font-family-base: 'Manrope', sans-serif;
+$font-family-mono: 'IBM Plex Mono', monospace;
 
 /** Z-Indexes **/
 $z-index-sidebar: 90;
@@ -13,24 +14,27 @@ $z-index-tab-controller: 95;
 $z-index-loader: 99999;
 
 /** Bootstrap Colors **/
-$primary: #7e45dc;
-$dark: #212529;
-$success: #06c203;
-$danger: #d91c1c;
+$primary: #2854e0;
+$dark: #161a23;
+$success: #16a34a;
+$danger: #dc2626;
 $light: #fcfcfc;
 
+/** Accent Colors **/
+$accent-teal: #17b8a6;
+
 /** Layout Colors **/
-$default-section-background: #f1eff3;
-$loader-background: #261841;
-$text-default-color: #140f29;
+$default-section-background: #f4f5f7;
+$loader-background: #0b1220;
+$text-default-color: #161a23;
 
 /** Nav Colors **/
-$nav-background: #140f29;
+$nav-background: #0b1220;
 $nav-background-selected: lighten($nav-background, 5%);
 $nav-avatar-border-color: lighten($nav-background, 10%);
-$nav-highlight: lighten($primary, 30%);
-$nav-hover: lighten($primary, 30%);
-$nav-selected: lighten($primary, 20%);
+$nav-highlight: $accent-teal;
+$nav-hover: $accent-teal;
+$nav-selected: lighten($accent-teal, 15%);
 $nav-contrast: #fcfcfc;
 $nav-contrast-90: rgba($nav-contrast, 0.9);
 $nav-contrast-80: rgba($nav-contrast, 0.8);

@@ -11,6 +11,24 @@
                                 :item="item"/>
         </div>
 
+        <div class="cta-button-wrapper pb-3 pb-lg-4">
+            <a class="btn btn-primary btn-xl" href="#portfolio">
+                <i class="fa-solid fa-diagram-project me-2"/>
+                <span v-html="localizeFromStrings('view_selected_work')"/>
+            </a>
+            <a class="btn btn-outline-primary btn-xl" href="#contact">
+                <i class="fa-solid fa-comments me-2"/>
+                <span v-html="localizeFromStrings('discuss_automation_project')"/>
+            </a>
+            <a v-if="resumeHref"
+               class="btn btn-outline-dark btn-xl"
+               :href="resumeHref"
+               download>
+                <i class="fa-solid fa-file-pdf me-2"/>
+                <span v-html="localizeFromStrings('download_resume')"/>
+            </a>
+        </div>
+
         <SocialLinks :items="socialLinks"
                      class="pt-lg-1"
                      size="3"
@@ -39,11 +57,18 @@ const props = defineProps({
 /** @type {Function} */
 const localize = inject("localize")
 
+/** @type {Function} */
+const localizeFromStrings = inject("localizeFromStrings")
+
 /** @type {{value:Profile}} */
 const profile = inject("profile")
 
 /** @type {{value:Boolean}} */
 const isScreenXlOrLarger = inject("isScreenXlOrLarger")
+
+const resumeHref = computed(() => {
+    return profile.value.getContactOptionWithId("download_resume")?.href
+})
 
 const title = computed(() => {
     return localize(
@@ -76,6 +101,25 @@ h1.title {
     letter-spacing: 3px;
     @include media-breakpoint-down($navigation-sidebar-breakpoint) {
         display: none;
+    }
+}
+
+div.cta-button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    a.btn-xl {
+        @include generate-dynamic-styles-with-hash((
+            xxxl: (padding: 1.125rem 2.3rem, font-size: 1.05rem),
+            xxl:  (padding: 1rem 2rem, font-size: 1rem),
+            lg:   (padding: 1rem 1.5rem, font-size: 0.9rem)
+        ));
+
+        border-radius: 4rem;
+        font-weight: 400;
+        font-family: $headings-font-family;
+        text-transform: uppercase;
     }
 }
 </style>
