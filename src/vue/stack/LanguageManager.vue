@@ -24,9 +24,10 @@ onMounted(() => {
     const savedId = window.localStorage.getItem(localStorageId)
     defaultLanguage.value = supportedLanguages.find(language => language.isDefault)
 
+    // First-time visitors always see the default language (English) rather than
+    // an auto-detected browser language. Returning visitors keep their explicit choice.
     selectedLanguage.value =
         supportedLanguages.find(language => language.id === savedId) ||
-        supportedLanguages.find(language => navigator.language.includes(language.id)) ||
         defaultLanguage.value ||
         supportedLanguages[0]
 
