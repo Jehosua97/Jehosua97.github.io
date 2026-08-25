@@ -3,6 +3,7 @@
         <button class="copy-button text-4"
                 :class="infoBadgeVisible ? 'copy-button-disabled' : ''"
                 :disabled="infoBadgeVisible"
+                :aria-label="localizeFromStrings('copy_to_clipboard')"
                 @click="_onClick">
             <i :class="icon"/>
         </button>
@@ -76,6 +77,11 @@ button.copy-button {
 
     &:hover {
         color: $primary;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: 2px;
     }
 }
 

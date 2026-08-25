@@ -63,6 +63,11 @@ button.btn {
     color: $light-7;
     transition: 0.1s background-color ease-out;
 
+    &:focus-visible {
+        outline: 2px solid $accent-teal !important;
+        outline-offset: 2px;
+    }
+
     @include media-breakpoint-down(md) {
         border-width: 1px;
         min-width: 15%;

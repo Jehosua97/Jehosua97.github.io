@@ -123,6 +123,11 @@ button.dropdown-toggle {
         opacity: 1;
     }
 
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: 2px;
+    }
+
     &:after {
         display:none;
     }

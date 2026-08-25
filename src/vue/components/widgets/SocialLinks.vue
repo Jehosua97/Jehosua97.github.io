@@ -5,7 +5,9 @@
            class="btn social-link"
            :class="classList"
            :href="link.href"
-           target="_blank">
+           :aria-label="link.label"
+           target="_blank"
+           rel="noopener noreferrer">
             <!-- ToolTip -->
             <div v-if="link.label"
                  class="social-link-tooltip text-1">
@@ -97,7 +99,12 @@ a.social-link {
     @include create-btn-social-color(
         $white, lighten($primary, 10%), lighten($primary, 25%),
         $white, lighten($dark, 15%), lighten($dark, 25%),
-    )
+    );
+
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: 2px;
+    }
 }
 
 a.social-link-size-2 {

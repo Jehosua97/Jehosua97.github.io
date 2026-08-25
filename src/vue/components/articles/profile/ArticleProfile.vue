@@ -1,8 +1,12 @@
 <template>
     <Article class="article-profile"
              :model="model">
-        <h1 class="title display-1 mb-3"
+        <h1 class="title display-1 mb-2"
             v-html="title"/>
+
+        <p v-if="specialization"
+           class="specialization text-3 fw-bold mb-3"
+           v-html="specialization"/>
 
         <InlineLinkList :items="InlineLinkListLinks"/>
 
@@ -14,7 +18,7 @@
         <div class="cta-button-wrapper pb-3 pb-lg-4">
             <a class="btn btn-primary btn-xl" href="#portfolio">
                 <i class="fa-solid fa-diagram-project me-2"/>
-                <span v-html="localizeFromStrings('view_selected_work')"/>
+                <span v-html="localizeFromStrings('view_engineering_work')"/>
             </a>
             <a class="btn btn-outline-primary btn-xl" href="#contact">
                 <i class="fa-solid fa-comments me-2"/>
@@ -23,7 +27,7 @@
             <a v-if="resumeHref"
                class="btn btn-outline-dark btn-xl"
                :href="resumeHref"
-               download>
+               download="Jehosua-A-Joya-Resume.pdf">
                 <i class="fa-solid fa-file-pdf me-2"/>
                 <span v-html="localizeFromStrings('download_resume')"/>
             </a>
@@ -77,6 +81,10 @@ const title = computed(() => {
     )
 })
 
+const specialization = computed(() => {
+    return localize(props.model.section.locales, "description", true)
+})
+
 const InlineLinkListLinks = computed(() => {
     const contactIds = props.model.getSetting("contact_list_ids", [])
     return contactIds.map(contactId => {
@@ -99,6 +107,18 @@ h1.title {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
+    @include media-breakpoint-down($navigation-sidebar-breakpoint) {
+        display: none;
+    }
+}
+
+p.specialization {
+    color: $accent-teal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    // SectionHeader already renders this same text on mobile (it reads the
+    // section's description directly), so avoid showing it twice.
     @include media-breakpoint-down($navigation-sidebar-breakpoint) {
         display: none;
     }

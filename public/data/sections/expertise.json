@@ -2,8 +2,96 @@
     "articles": [
         {
             "id": 1,
+            "component": "ArticleTagGroups",
+            "locales": {
+                "en": {"title": "Technical Toolkit"},
+                "es": {"title": "Toolkit Técnico"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "primary_count": 6
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "locales": {
+                        "en": {"title": "AWS & Cloud Infrastructure", "tags": ["AWS", "EC2", "S3", "IAM", "VPC", "Lambda", "AWS CDK", "Kubernetes", "Docker"]},
+                        "es": {"title": "AWS e Infraestructura Cloud", "tags": ["AWS", "EC2", "S3", "IAM", "VPC", "Lambda", "AWS CDK", "Kubernetes", "Docker"]}
+                    }
+                },
+                {
+                    "id": 2,
+                    "locales": {
+                        "en": {"title": "Infrastructure as Code", "tags": ["Terraform", "CloudFormation", "Ansible"]},
+                        "es": {"title": "Infrastructure as Code", "tags": ["Terraform", "CloudFormation", "Ansible"]}
+                    }
+                },
+                {
+                    "id": 3,
+                    "locales": {
+                        "en": {"title": "CI/CD & Containers", "tags": ["Jenkins", "GitLab CI", "GitHub Actions", "Git"]},
+                        "es": {"title": "CI/CD y Contenedores", "tags": ["Jenkins", "GitLab CI", "GitHub Actions", "Git"]}
+                    }
+                },
+                {
+                    "id": 4,
+                    "locales": {
+                        "en": {"title": "Observability & Reliability", "tags": ["Datadog", "Grafana", "Zabbix", "Alerting", "Troubleshooting", "Operational Visibility", "High Availability"]},
+                        "es": {"title": "Observabilidad y Confiabilidad", "tags": ["Datadog", "Grafana", "Zabbix", "Alertas", "Troubleshooting", "Visibilidad Operativa", "Alta Disponibilidad"]}
+                    }
+                },
+                {
+                    "id": 5,
+                    "locales": {
+                        "en": {"title": "Automation & Systems Integration", "tags": ["n8n", "Selenium", "REST APIs", "Webhooks", "PostgreSQL", "JSON Schema", "System Integration", "Workflow Orchestration"]},
+                        "es": {"title": "Automatización e Integración de Sistemas", "tags": ["n8n", "Selenium", "APIs REST", "Webhooks", "PostgreSQL", "JSON Schema", "Integración de Sistemas", "Orquestación de Workflows"]}
+                    }
+                },
+                {
+                    "id": 6,
+                    "locales": {
+                        "en": {"title": "Programming & Data", "tags": ["Python", "TypeScript", "JavaScript", "Bash", "SQL", "Groovy"]},
+                        "es": {"title": "Programación y Datos", "tags": ["Python", "TypeScript", "JavaScript", "Bash", "SQL", "Groovy"]}
+                    }
+                },
+                {
+                    "id": 7,
+                    "locales": {
+                        "en": {"title": "Security Practices", "tags": ["IAM Policy Design", "Vulnerability Scanning", "Secrets Management", "GDPR-Aligned Practices", "Approval Gates", "Webhook Verification"]},
+                        "es": {"title": "Prácticas de Seguridad", "tags": ["Diseño de Políticas IAM", "Escaneo de Vulnerabilidades", "Gestión de Secretos", "Prácticas Alineadas a GDPR", "Puntos de Aprobación", "Verificación de Webhooks"]}
+                    }
+                },
+                {
+                    "id": 8,
+                    "locales": {
+                        "en": {"title": "Applied Machine Learning", "tags": ["scikit-learn", "XGBoost", "Logistic Regression", "SVM", "Multilayer Perceptron", "SMOTE", "GridSearchCV", "Model Evaluation", "Threshold Tuning"]},
+                        "es": {"title": "Machine Learning Aplicado", "tags": ["scikit-learn", "XGBoost", "Regresión Logística", "SVM", "Perceptrón Multicapa", "SMOTE", "GridSearchCV", "Evaluación de Modelos", "Ajuste de Umbral"]}
+                    }
+                },
+                {
+                    "id": 9,
+                    "locales": {
+                        "en": {"title": "Business & Product", "tags": ["Stakeholder Engagement", "Requirements Analysis", "Process Improvement", "Product Management", "Cross-Functional Collaboration", "Technical Communication"]},
+                        "es": {"title": "Negocio y Producto", "tags": ["Gestión de Stakeholders", "Análisis de Requerimientos", "Mejora de Procesos", "Gestión de Producto", "Colaboración Interfuncional", "Comunicación Técnica"]}
+                    }
+                },
+                {
+                    "id": 10,
+                    "locales": {
+                        "en": {"title": "Additional Tools", "tags": ["Google Cloud Foundations", "Nexus", "Agile", "Scrum", "Jira", "Validation", "Human-in-the-Loop Controls", "Structured Logging", "Vitest"]},
+                        "es": {"title": "Herramientas Adicionales", "tags": ["Google Cloud Foundations", "Nexus", "Agile", "Scrum", "Jira", "Validación", "Controles Human-in-the-Loop", "Logging Estructurado", "Vitest"]}
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
             "component": "ArticleTimeline",
-            "locales": {},
+            "locales": {
+                "en": {"title": "Education"},
+                "es": {"title": "Educación"}
+            },
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "desc"
@@ -144,7 +232,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "component": "ArticleThread",
             "locales": {
                 "en": {"title": "Certifications & Credentials"},

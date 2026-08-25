@@ -82,9 +82,12 @@ const mailtoNoticeMessage = computed(() => {
 })
 
 onMounted(() => {
-    const publicKey = props.model.getSetting("contact_js_public_key")
-    const serviceId = props.model.getSetting("contact_js_service_id")
-    const templateId = props.model.getSetting("contact_js_template_id")
+    // JSON content settings take priority; VITE_EMAILJS_* env vars (see .env.example)
+    // are the fallback so credentials can be supplied at build time via CI secrets
+    // without editing tracked content files.
+    const publicKey = props.model.getSetting("contact_js_public_key") || import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    const serviceId = props.model.getSetting("contact_js_service_id") || import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = props.model.getSetting("contact_js_template_id") || import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 
     if(publicKey && serviceId && templateId) {
         emails.init(publicKey, serviceId, templateId)

@@ -4,8 +4,11 @@
             "about": "About",
             "adjusting_viewport": "Adjusting Viewport...",
             "changing_language": "Changing Language...",
+            "close": "Close",
             "copied": "Copied",
+            "copy_to_clipboard": "Copy to clipboard",
             "discuss_automation_project": "Discuss an Automation Project",
+            "view_engineering_work": "View Engineering Work",
             "download_resume": "Download Résumé",
             "email": "E-mail",
             "error_fill_all_fields": "Please fill all the fields.",
@@ -30,17 +33,20 @@
             "show_more_categories": "Show {n} more categories",
             "subject": "Subject",
             "tags": "Technologies",
+            "toggle_navigation": "Toggle navigation size",
             "view_certification": "View Certification",
             "view_more_info": "View More Info",
-            "view_on_github": "View Repository",
-            "view_selected_work": "View Selected Work"
+            "view_on_github": "View Repository"
         },
         "es": {
             "about": "Acerca de",
             "adjusting_viewport": "Ajustando la pantalla...",
             "changing_language": "Cambiando de idioma...",
+            "close": "Cerrar",
             "copied": "Copiado",
-            "discuss_automation_project": "Hablemos de un Proyecto de Automatización",
+            "copy_to_clipboard": "Copiar al portapapeles",
+            "discuss_automation_project": "Hablemos de Automatización",
+            "view_engineering_work": "Ver Proyectos",
             "download_resume": "Descargar CV",
             "email": "E-mail",
             "error_fill_all_fields": "Por favor, completa todos los campos.",
@@ -65,10 +71,10 @@
             "show_more_categories": "Mostrar {n} categorías más",
             "subject": "Asunto",
             "tags": "Tecnologías",
+            "toggle_navigation": "Alternar tamaño de navegación",
             "view_certification": "Ver certificación",
             "view_more_info": "Ver más información",
-            "view_on_github": "Ver Repositorio",
-            "view_selected_work": "Ver Proyectos"
+            "view_on_github": "Ver Repositorio"
         }
     }
 }

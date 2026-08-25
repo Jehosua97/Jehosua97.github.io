@@ -19,7 +19,7 @@
                           fa-icon="fa-solid fa-close"
                           variant="transparent"
                           size="4"
-                          aria-label="Close"/>
+                          :aria-label="localizeFromStrings('close')"/>
 
                 <div class="modal-custom-content">
                     <slot/>
@@ -31,7 +31,7 @@
 
 <script setup>
 import Modal from 'bootstrap/js/src/modal'
-import {onMounted, onUnmounted, ref, watch} from "vue"
+import {inject, onMounted, onUnmounted, ref, watch} from "vue"
 import FaButton from "/src/vue/components/widgets/FaButton.vue"
 
 const props = defineProps({
@@ -44,6 +44,9 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['close'])
+
+/** @type {Function} */
+const localizeFromStrings = inject("localizeFromStrings")
 
 const bsModal = ref(null)
 

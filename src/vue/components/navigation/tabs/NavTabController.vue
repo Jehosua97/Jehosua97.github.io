@@ -124,6 +124,11 @@ button.nav-mobile-tab-button {
     border-top: 2px solid lighten($nav-background, 20%);
     transition: 0.1s padding-bottom ease-out;
 
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: -2px;
+    }
+
     i {
         color: $nav-contrast-20;
         font-size: 1rem;

@@ -1,15 +1,21 @@
 <template>
-    <button class="nav-toggle-button" :class="`${toggled ? 'nav-toggle-button-toggled' : ''}`">
+    <button class="nav-toggle-button"
+            :class="`${toggled ? 'nav-toggle-button-toggled' : ''}`"
+            :aria-label="localizeFromStrings('toggle_navigation')"
+            :aria-expanded="String(!toggled)">
         <i :class="faIcon"/>
     </button>
 </template>
 
 <script setup>
-import {computed} from "vue"
+import {computed, inject} from "vue"
 
 const props = defineProps({
     toggled: Boolean
 })
+
+/** @type {Function} */
+const localizeFromStrings = inject("localizeFromStrings")
 
 const faIcon = computed(() => {
     return props.toggled ?
@@ -38,6 +44,11 @@ button.nav-toggle-button {
 
     &:hover {
         background-color: lighten($nav-background, 6%);
+    }
+
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: 2px;
     }
 
     &-toggled {

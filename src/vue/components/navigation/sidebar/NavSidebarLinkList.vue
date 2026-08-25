@@ -115,6 +115,11 @@ button.nav-sidebar-link {
     outline: none;
     border: 0;
 
+    &:focus-visible {
+        outline: 2px solid $accent-teal;
+        outline-offset: 2px;
+    }
+
     text-transform: uppercase;
     width: 250px;
     text-align: left;
