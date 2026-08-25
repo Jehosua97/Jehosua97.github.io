@@ -3,11 +3,9 @@
     "profilePictureUrl": "images/pictures/avatar.jpg",
     "locales": {
         "en": {
-            "credits": "Template by <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
             "role": "DevOps & Cloud Engineer"
         },
         "es": {
-            "credits": "Plantilla de <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
             "role": "Ingeniero DevOps y Cloud"
         }
     },
