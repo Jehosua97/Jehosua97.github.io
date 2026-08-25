@@ -17,22 +17,58 @@
                     "id": 1,
                     "dateStart": null,
                     "img": null,
+                    "fallbackFaIcon": "fa-solid fa-cloud-arrow-up",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Cloud Infrastructure & Delivery Automation",
+                            "description": "Build repeatable cloud environments and safer delivery workflows using AWS, Terraform, CloudFormation, Docker, Kubernetes, and CI/CD."
+                        },
+                        "es": {
+                            "title": "Infraestructura Cloud y Automatización de Entrega",
+                            "description": "Construyo entornos cloud repetibles y flujos de entrega más seguros usando AWS, Terraform, CloudFormation, Docker, Kubernetes y CI/CD."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-gauge-high",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Monitoring & Platform Reliability",
+                            "description": "Improve operational visibility through monitoring, alerting, dashboards, troubleshooting practices, and reliable deployment standards."
+                        },
+                        "es": {
+                            "title": "Monitoreo y Confiabilidad de Plataformas",
+                            "description": "Mejoro la visibilidad operativa mediante monitoreo, alertas, dashboards, prácticas de troubleshooting y estándares de despliegue confiables."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "dateStart": null,
+                    "img": null,
                     "fallbackFaIcon": "fa-solid fa-arrows-spin",
                     "fallbackFaIconColor": null,
                     "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Business Process Automation",
-                            "description": "Analyzing repetitive workflows and building practical automations with n8n, Python, APIs, webhooks, validation, and approval steps — data entry, notifications, document routing, system sync, and scheduled tasks."
+                            "description": "Turn repetitive workflows into maintainable n8n, Python, API, and webhook automations with validation and approval steps."
                         },
                         "es": {
                             "title": "Automatización de Procesos de Negocio",
-                            "description": "Analizo flujos repetitivos y construyo automatizaciones prácticas con n8n, Python, APIs, webhooks, validación y pasos de aprobación — captura de datos, notificaciones, enrutamiento de documentos, sincronización de sistemas y tareas programadas."
+                            "description": "Convierto flujos repetitivos en automatizaciones mantenibles con n8n, Python, APIs y webhooks, con pasos de validación y aprobación."
                         }
                     }
                 },
                 {
-                    "id": 2,
+                    "id": 4,
                     "dateStart": null,
                     "img": null,
                     "fallbackFaIcon": "fa-solid fa-plug",
@@ -41,47 +77,11 @@
                     "locales": {
                         "en": {
                             "title": "API & System Integration",
-                            "description": "Connecting applications and business systems through REST APIs, webhooks, structured data contracts, and PostgreSQL, so information moves reliably between the tools your team already uses."
+                            "description": "Connect business applications through REST APIs, webhooks, structured data contracts, PostgreSQL, and integration services."
                         },
                         "es": {
                             "title": "Integración de APIs y Sistemas",
-                            "description": "Conecto aplicaciones y sistemas de negocio mediante APIs REST, webhooks, contratos de datos estructurados y PostgreSQL, para que la información fluya de forma confiable entre las herramientas que ya usa tu equipo."
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-cloud-arrow-up",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
-                    "locales": {
-                        "en": {
-                            "title": "Cloud & Delivery Automation",
-                            "description": "Improving deployment consistency with Terraform, CloudFormation, Docker, Kubernetes, and CI/CD pipelines, so releases become repeatable instead of risky."
-                        },
-                        "es": {
-                            "title": "Cloud y Automatización de Entrega",
-                            "description": "Mejoro la consistencia de los despliegues con Terraform, CloudFormation, Docker, Kubernetes y pipelines de CI/CD, para que cada release sea repetible en vez de riesgoso."
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-gauge-high",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
-                    "locales": {
-                        "en": {
-                            "title": "Monitoring & Reliability",
-                            "description": "Setting up monitoring, alerting, dashboards, and operational visibility with tools like Datadog, Grafana, and Zabbix, so issues surface before they become incidents."
-                        },
-                        "es": {
-                            "title": "Monitoreo y Confiabilidad",
-                            "description": "Implemento monitoreo, alertas, dashboards y visibilidad operativa con herramientas como Datadog, Grafana y Zabbix, para detectar problemas antes de que se conviertan en incidentes."
+                            "description": "Conecto aplicaciones de negocio mediante APIs REST, webhooks, contratos de datos estructurados, PostgreSQL y servicios de integración."
                         }
                     }
                 },
@@ -95,11 +95,11 @@
                     "locales": {
                         "en": {
                             "title": "AI-Ready Workflow Design",
-                            "description": "Identifying where AI-assisted steps can fit into a business workflow while preserving validation, human approvals, traceability, and security boundaries — no black-box automation."
+                            "description": "Identify responsible opportunities for AI-assisted automation while preserving validation, human approval, traceability, and operational control."
                         },
                         "es": {
                             "title": "Diseño de Workflows Listos para IA",
-                            "description": "Identifico dónde pueden integrarse pasos asistidos por IA en un flujo de negocio, preservando validación, aprobaciones humanas, trazabilidad y límites de seguridad — sin automatización de caja negra."
+                            "description": "Identifico oportunidades responsables de automatización asistida por IA, preservando validación, aprobación humana, trazabilidad y control operativo."
                         }
                     }
                 }

@@ -8,37 +8,16 @@
             "type": "centered",
             "locales": {
                 "en": {
-                    "title": "Cloud, Software *& Automation*",
+                    "title": "DevOps *& Cloud* Engineer",
                     "title_short": "Welcome!",
-                    "description": null,
+                    "description": "Automation • Platform Reliability • Systems Integration",
                     "nav_label": "About"
                 },
                 "es": {
-                    "title": "Cloud, Software *y Automatización*",
+                    "title": "Ingeniero *DevOps* y *Cloud*",
                     "title_short": "Bienvenido!",
-                    "description": null,
+                    "description": "Automatización • Confiabilidad de Plataformas • Integración de Sistemas",
                     "nav_label": "Acerca de"
-                }
-            }
-        },
-        {
-            "id": "audiences",
-            "categoryId": "work",
-            "jsonPath": "/sections/audiences.json",
-            "faIcon": "fa-solid fa-people-arrows",
-            "type": "column",
-            "locales": {
-                "en": {
-                    "title": "Who I *Help*",
-                    "title_short": null,
-                    "description": "Two audiences, one engineering approach: reliable systems that connect to real outcomes.",
-                    "nav_label": "Who I Help"
-                },
-                "es": {
-                    "title": "A Quién *Ayudo*",
-                    "title_short": null,
-                    "description": "Dos audiencias, un mismo enfoque de ingeniería: sistemas confiables conectados a resultados reales.",
-                    "nav_label": "A Quién Ayudo"
                 }
             }
         },
@@ -50,15 +29,15 @@
             "type": "column",
             "locales": {
                 "en": {
-                    "title": "Selected *Work*",
+                    "title": "Selected *Engineering* Work",
                     "title_short": null,
-                    "description": "A selection of engineering and applied machine learning projects, from cloud infrastructure to business automation.",
+                    "description": "A selection of engineering projects, from cloud infrastructure to business automation and applied machine learning.",
                     "nav_label": "Work"
                 },
                 "es": {
-                    "title": "Proyectos *Seleccionados*",
+                    "title": "Proyectos de *Ingeniería*",
                     "title_short": null,
-                    "description": "Una selección de proyectos de ingeniería y machine learning aplicado, desde infraestructura cloud hasta automatización de negocio.",
+                    "description": "Una selección de proyectos de ingeniería, desde infraestructura cloud hasta automatización de negocio y machine learning aplicado.",
                     "nav_label": "Trabajo"
                 }
             }
@@ -71,7 +50,7 @@
             "type": "column",
             "locales": {
                 "en": {
-                    "title": "Automation *& Engineering* Services",
+                    "title": "Engineering *& Automation* Services",
                     "title_short": null,
                     "description": "I help businesses identify repetitive operational work and turn it into reliable, maintainable, and observable workflows.",
                     "nav_label": "Services"
@@ -106,44 +85,23 @@
             }
         },
         {
-            "id": "education",
+            "id": "expertise",
             "categoryId": "background",
-            "jsonPath": "/sections/education.json",
-            "faIcon": "fa-solid fa-graduation-cap",
-            "type": "column",
-            "locales": {
-                "en": {
-                    "title": "Education *& Credentials*",
-                    "title_short": null,
-                    "description": "Academic background and the credentials I'm currently completing.",
-                    "nav_label": "Education"
-                },
-                "es": {
-                    "title": "Educación *y Credenciales*",
-                    "title_short": null,
-                    "description": "Formación académica y las credenciales que estoy completando actualmente.",
-                    "nav_label": "Educación"
-                }
-            }
-        },
-        {
-            "id": "toolkit",
-            "categoryId": "background",
-            "jsonPath": "/sections/toolkit.json",
+            "jsonPath": "/sections/expertise.json",
             "faIcon": "fa-solid fa-toolbox",
             "type": "column",
             "locales": {
                 "en": {
-                    "title": "Technical *Toolkit*",
+                    "title": "Technical *Expertise*",
                     "title_short": null,
-                    "description": "The technologies I use most, organized by area. A few more are one click away.",
-                    "nav_label": "Toolkit"
+                    "description": "The technologies I use, how I've applied them, and the education and credentials behind them.",
+                    "nav_label": "Expertise"
                 },
                 "es": {
-                    "title": "*Toolkit* Técnico",
+                    "title": "*Expertise* Técnico",
                     "title_short": null,
-                    "description": "Las tecnologías que más utilizo, organizadas por área. Algunas más están a un clic de distancia.",
-                    "nav_label": "Toolkit"
+                    "description": "Las tecnologías que utilizo, cómo las he aplicado, y la educación y credenciales detrás de ellas.",
+                    "nav_label": "Expertise"
                 }
             }
         },
@@ -157,13 +115,13 @@
                 "en": {
                     "title": "Let's Build Something *Useful*",
                     "title_short": null,
-                    "description": "Whether you're hiring for a cloud or software engineering role, or looking to automate a business process, I'd be happy to learn about the problem you're trying to solve.",
+                    "description": "Whether you're hiring for a DevOps or cloud engineering role, or looking to automate a business process, I'd be happy to learn about the problem you're trying to solve.",
                     "nav_label": "Contact"
                 },
                 "es": {
                     "title": "Construyamos Algo *Útil*",
                     "title_short": null,
-                    "description": "Ya sea que estés contratando para un rol de ingeniería cloud o software, o busques automatizar un proceso de negocio, con gusto conoceré el problema que quieres resolver.",
+                    "description": "Ya sea que estés contratando para un rol de DevOps o ingeniería cloud, o busques automatizar un proceso de negocio, con gusto conoceré el problema que quieres resolver.",
                     "nav_label": "Contacto"
                 }
             }

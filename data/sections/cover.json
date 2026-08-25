@@ -15,10 +15,10 @@
                     "id": 1,
                     "locales": {
                         "en": {
-                            "description": "I build reliable systems and intelligent automations that create <strong>measurable business value</strong>."
+                            "description": "I build reliable cloud platforms and automation that make software delivery <strong>faster, safer, and easier to operate</strong>."
                         },
                         "es": {
-                            "description": "Construyo sistemas confiables y automatizaciones inteligentes que generan un <strong>impacto de negocio medible</strong>."
+                            "description": "Construyo plataformas cloud confiables y automatizaciones que hacen que la entrega de software sea <strong>más rápida, segura y fácil de operar</strong>."
                         }
                     }
                 },
@@ -26,10 +26,10 @@
                     "id": 2,
                     "locales": {
                         "en": {
-                            "description": "I am a Cloud, Software & Automation Engineer with <strong>5+ years</strong> of experience building APIs, cloud-native platforms, delivery pipelines, and business process automations. My MCS, MBA, and Computer Engineering background helps me connect technical execution with operational and customer priorities."
+                            "description": "I am a DevOps & Cloud Engineer with <strong>5+ years</strong> of experience building AWS infrastructure, CI/CD systems, containerized platforms, observability solutions, APIs, and business automations. My Master of Computer Science, MBA, and Computer Engineering background helps me connect platform engineering with operational and business outcomes."
                         },
                         "es": {
-                            "description": "Soy Ingeniero de Cloud, Software y Automatización con <strong>más de 5 años</strong> de experiencia desarrollando APIs, plataformas cloud-native, pipelines de entrega y automatización de procesos de negocio. Mi formación en Ciencias de la Computación (MCS), MBA e Ingeniería en Computación me permite conectar la ejecución técnica con las prioridades operativas y del negocio."
+                            "description": "Soy Ingeniero DevOps y Cloud con <strong>más de 5 años</strong> de experiencia desarrollando infraestructura AWS, sistemas de CI/CD, plataformas con contenedores, soluciones de observabilidad, APIs y automatizaciones de negocio. Mi formación en Ciencias de la Computación (MCS), MBA e Ingeniería en Computación me permite conectar la ingeniería de plataformas con resultados operativos y empresariales."
                         }
                     }
                 },
@@ -114,6 +114,66 @@
                     "locales": {
                         "en": {"title": "100+", "description": "APIs and system integrations delivered"},
                         "es": {"title": "100+", "description": "APIs e integraciones entregadas"}
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": "How I Create Value",
+                    "description": "Two audiences, one engineering approach: reliable systems that connect to real outcomes."
+                },
+                "es": {
+                    "title": "Cómo Genero Valor",
+                    "description": "Dos audiencias, un mismo enfoque de ingeniería: sistemas confiables conectados a resultados reales."
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 2,
+                "transparent_item_icon_background": true,
+                "small_icons": false,
+                "chart": null
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-building",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "For Employers",
+                            "description": "Hands-on experience for DevOps, Cloud Engineering, Platform Engineering, Infrastructure Automation, and Site Reliability roles, with measurable results across AWS, CI/CD, Kubernetes, observability, security, and production operations."
+                        },
+                        "es": {
+                            "title": "Para Empleadores",
+                            "description": "Experiencia práctica para roles de DevOps, Ingeniería Cloud, Ingeniería de Plataformas, Automatización de Infraestructura y Confiabilidad de Sitios, con resultados medibles en AWS, CI/CD, Kubernetes, observabilidad, seguridad y operaciones de producción."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-handshake",
+                    "fallbackFaIconColor": null,
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "For Businesses",
+                            "description": "I help teams eliminate repetitive work, connect fragmented systems, and improve operational reliability through practical automation, API integrations, cloud infrastructure, and observable workflows."
+                        },
+                        "es": {
+                            "title": "Para Empresas",
+                            "description": "Ayudo a equipos a eliminar trabajo repetitivo, conectar sistemas fragmentados y mejorar la confiabilidad operativa mediante automatización práctica, integraciones de APIs, infraestructura cloud y workflows observables."
+                        }
                     }
                 }
             ]

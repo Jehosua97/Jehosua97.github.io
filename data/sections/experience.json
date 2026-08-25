@@ -73,7 +73,7 @@
                                 "title": "Key Achievements",
                                 "items": [
                                     "Deployed, operated, and troubleshot <strong>100+</strong> business-critical Docker and Kubernetes workloads, contributing to <strong>99.95% uptime</strong>.",
-                                    "Automated CI/CD pipelines for <strong>40+ AWS applications</strong> using Jenkins, GitLab CI, and Terraform.",
+                                    "Automated CI/CD pipelines for <strong>40+ AWS applications</strong> using Jenkins, GitLab CI, GitHub Actions, and Terraform.",
                                     "Reduced deployment failures by <strong>30%</strong> and shortened release cycles by <strong>20%</strong> through repeatable delivery practices.",
                                     "Implemented Infrastructure as Code with Terraform and CloudFormation, standardizing AWS environments across global application and engineering teams.",
                                     "Used Datadog, Grafana, and Zabbix for monitoring, alerting, troubleshooting, and operational visibility.",
@@ -83,7 +83,7 @@
                             "province": "Remote",
                             "country": "Mexico City, Mexico",
                             "institution": "Solera Holdings",
-                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
+                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "GitHub Actions", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
                         },
                         "es": {
                             "title": "Software Configuration Management Engineer I",
@@ -92,7 +92,7 @@
                                 "title": "Logros Clave",
                                 "items": [
                                     "Desplegué, operé y solucioné problemas en <strong>más de 100</strong> workloads críticos de Docker y Kubernetes, contribuyendo a un <strong>uptime del 99.95%</strong>.",
-                                    "Automaticé pipelines de CI/CD para <strong>más de 40 aplicaciones AWS</strong> usando Jenkins, GitLab CI y Terraform.",
+                                    "Automaticé pipelines de CI/CD para <strong>más de 40 aplicaciones AWS</strong> usando Jenkins, GitLab CI, GitHub Actions y Terraform.",
                                     "Reduje las fallas de despliegue en <strong>30%</strong> y acorté los ciclos de release en <strong>20%</strong> mediante prácticas de entrega repetibles.",
                                     "Implementé Infrastructure as Code con Terraform y CloudFormation, estandarizando entornos AWS entre equipos globales de aplicaciones e ingeniería.",
                                     "Utilicé Datadog, Grafana y Zabbix para monitoreo, alertas, troubleshooting y visibilidad operativa.",
@@ -102,7 +102,7 @@
                             "province": "Remoto",
                             "country": "Ciudad de México, México",
                             "institution": "Solera Holdings",
-                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
+                            "tags": ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "GitHub Actions", "Terraform", "CloudFormation", "Datadog", "Grafana", "Zabbix"]
                         }
                     },
                     "links": []
