@@ -16,11 +16,11 @@
         </div>
 
         <div class="cta-button-wrapper pb-3 pb-lg-4">
-            <a class="btn btn-primary btn-xl" href="#portfolio">
+            <a class="btn btn-primary btn-xl" href="#portfolio" @click="_goToSection('portfolio', $event)">
                 <i class="fa-solid fa-diagram-project me-2"/>
                 <span v-html="localizeFromStrings('view_engineering_work')"/>
             </a>
-            <a class="btn btn-outline-primary btn-xl" href="#contact">
+            <a class="btn btn-outline-primary btn-xl" href="#contact" @click="_goToSection('contact', $event)">
                 <i class="fa-solid fa-comments me-2"/>
                 <span v-html="localizeFromStrings('discuss_automation_project')"/>
             </a>
@@ -70,9 +70,34 @@ const profile = inject("profile")
 /** @type {{value:Boolean}} */
 const isScreenXlOrLarger = inject("isScreenXlOrLarger")
 
+/** @type {{value: Section[]}} */
+const sections = inject("sections")
+
+/** @type {Function} */
+const navigateToSection = inject("navigateToSection")
+
 const resumeHref = computed(() => {
     return profile.value.getContactOptionWithId("download_resume")?.href
 })
+
+/**
+ * Plain hash links only update window.location.hash — on desktop, where every
+ * section stays mounted at once, that doesn't scroll anywhere on its own.
+ * Route through the same navigateToSection the sidebar uses, then scroll the
+ * target section into view directly (mirrors NavControlAllAtOnce's own logic).
+ */
+const _goToSection = (sectionId, event) => {
+    const target = sections.value?.find(section => section.id === sectionId)
+    if(!target)
+        return
+
+    event.preventDefault()
+    navigateToSection(target)
+
+    requestAnimationFrame(() => {
+        document.getElementById(target.htmlId)?.scrollIntoView({behavior: "smooth"})
+    })
+}
 
 const title = computed(() => {
     return localize(

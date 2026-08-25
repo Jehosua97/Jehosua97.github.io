@@ -3,7 +3,7 @@
         <div class="nav-sidebar-footer-language-picker-wrapper">
             <LanguagePicker :shrink="shrink"/>
         </div>
-        <div v-if="!shrink"
+        <div v-if="!shrink && credits"
              class="nav-sidebar-footer-credits">
             <span v-html="credits"/>
         </div>
