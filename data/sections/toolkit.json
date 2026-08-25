@@ -13,8 +13,8 @@
                 {
                     "id": 1,
                     "locales": {
-                        "en": {"title": "Cloud & Platforms", "tags": ["AWS", "Kubernetes", "Docker", "EC2", "S3", "Lambda"]},
-                        "es": {"title": "Cloud y Plataformas", "tags": ["AWS", "Kubernetes", "Docker", "EC2", "S3", "Lambda"]}
+                        "en": {"title": "Cloud & Platforms", "tags": ["AWS", "Kubernetes", "Docker", "EC2", "S3", "Lambda", "AWS CDK", "Google Cloud Foundations"]},
+                        "es": {"title": "Cloud y Plataformas", "tags": ["AWS", "Kubernetes", "Docker", "EC2", "S3", "Lambda", "AWS CDK", "Google Cloud Foundations"]}
                     }
                 },
                 {
